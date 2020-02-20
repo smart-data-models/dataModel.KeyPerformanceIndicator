@@ -1,0 +1,77 @@
+{
+    "id": "urn:ngsi-ld:KeyPerformanceIndicator:kpi-2016-Ciudad-containers-faults",
+    "type": "KeyPerformanceIndicator",
+    "modifiedAt": "2016-06-29T15:59:09.224Z",
+    "category": {
+        "type": "Property",
+        "value": [
+            "quantitative"
+        ]
+    },
+    "calculationFrequency": {
+        "type": "Property",
+        "value": "monthly"
+    },
+    "description": {
+        "type": "Property",
+        "value": "Number of incidences raised on containers per month"
+    },
+    "currentStanding": {
+        "type": "Property",
+        "value": "good"
+    },
+    "address": {
+        "type": "Property",
+        "value": {
+            "addressLocality": "Ciudad",
+            "addressCountry": "ESP",
+            "type": "PostalAddress"
+        }
+    },
+    "calculationPeriod": {
+        "type": "Property",
+        "value": {
+            "to": "2016-06-30",
+            "from": "2016-06-01"
+        }
+    },
+    "dateNextCalculation": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "2016-07-31Z"
+        }
+    },
+    "calculationMethod": {
+        "type": "Property",
+        "value": "automatic"
+    },
+    "provider": {
+        "type": "Property",
+        "value": {
+            "name": "Cleaning Service Provider S.A."
+        }
+    },
+    "organization": {
+        "type": "Property",
+        "value": {
+            "name": "Ayuntamiento de Ciudad"
+        }
+    },
+    "kpiValue": {
+        "type": "Property",
+        "value": 20
+    },
+    "name": {
+        "type": "Property",
+        "value": "Incidencias-Contenedores-Mensual"
+    },
+    "process": {
+        "type": "Property",
+        "value": "Garbage Collection"
+    },
+    "@context": [
+        "https://schema.lab.fiware.org/ld/context",
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+    ]
+}
