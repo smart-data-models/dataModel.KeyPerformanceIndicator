@@ -1,0 +1,55 @@
+--- 
+components: 
+  schemas: 
+    keyPerformanceIndicator: 
+      $ref: "https://raw.githubusercontent.com/smart-data-models/dataModel.KeyPerformanceIndicator/master/keyPerformanceIndicator/schema.yaml#/keyPerformanceIndicator"
+info: 
+  description: |
+    According to Wikipedia a Key Performance Indicator (KPI) is a type of performance measurement.
+    KPIs evaluate the success of an organization or of a particular activity in which it engages.
+    
+    The present data model defines a type of NGSI entity which captures the value and associated details of a key performance
+    indicator. The data model is flexible enough to accommodate different usage scenarios: An entity per KPI calculation or 
+    a unique entity per KPI which value evolves along time. Please note that in the latter case a historical module, such 
+    as the STH, would have to take care of the KPI evolution.
+  title: keyPerformanceIndicator
+  version: "1.0.0"
+openapi: "3.0.0"
+
+# These paths are merely representative.
+paths: 
+  /ngsi-ld/v1/entities: 
+    get: 
+      description: "Retrieve a set of entities which matches a specific query from an NGSI-LD system"
+      parameters: 
+        - 
+          in: query
+          name: type
+          required: true
+          schema: 
+            enum: 
+              - keyPerformanceIndicator
+            type: string
+      responses: 
+        ? "200"
+        : 
+          content: 
+            application/ld+json: 
+              examples: 
+                keyvalues: 
+                  summary: "Key-Values Pairs"
+                  value: 
+                    - 
+                      $ref: "https://raw.githubusercontent.com/smart-data-models/dataModel.keyPerformanceIndicator/master/keyPerformanceIndicator/example.json"
+                normalized: 
+                  summary: "Normalized NGSI-LD"
+                  value: 
+                    - 
+                      $ref: "https://raw.githubusercontent.com/smart-data-models/dataModel.keyPerformanceIndicator/master/keyPerformanceIndicator/example-normalized-ld.jsonld"
+          description: OK
+      tags: 
+        - ngsi-ld
+tags: 
+  - 
+    description: "NGSI-LD Linked-data Format"
+    name: ngsi-ld
