@@ -4,4 +4,4 @@ Create an [issue](https://github.com/smart-data-models/dataModel.KeyPerformanceI
 
 This subject contains data models for:
 
--   [`Key Performance Indicator`](https://swagger.lab.fiware.org/?url=https://raw.githubusercontent.com/smart-data-models/dataModel.KeyPerformanceIndicator/master/keyPerformanceIndicator/swagger.yaml)
+-   [`Key Performance Indicator`](https://swagger.lab.fiware.org/?url=https://smart-data-models.github.io/dataModel.KeyPerformanceIndicator/keyPerformanceIndicator/swagger.yaml)

@@ -2,7 +2,7 @@
 components: 
   schemas: 
     keyPerformanceIndicator: 
-      $ref: "https://raw.githubusercontent.com/smart-data-models/dataModel.KeyPerformanceIndicator/master/keyPerformanceIndicator/schema.yaml#/keyPerformanceIndicator"
+      $ref: "https://smart-data-models.github.io/dataModel.KeyPerformanceIndicator/keyPerformanceIndicator/model.yaml#/keyPerformanceIndicator"
 info: 
   description: |
     According to Wikipedia a Key Performance Indicator (KPI) is a type of performance measurement.
@@ -40,12 +40,12 @@ paths:
                   summary: "Key-Values Pairs"
                   value: 
                     - 
-                      $ref: "https://raw.githubusercontent.com/smart-data-models/dataModel.keyPerformanceIndicator/master/keyPerformanceIndicator/example.json"
+                      $ref: "https://smart-data-models.github.io/dataModel.keyPerformanceIndicator/keyPerformanceIndicator/example.json"
                 normalized: 
                   summary: "Normalized NGSI-LD"
                   value: 
                     - 
-                      $ref: "https://raw.githubusercontent.com/smart-data-models/dataModel.keyPerformanceIndicator/master/keyPerformanceIndicator/example-normalized-ld.jsonld"
+                      $ref: "https://smart-data-models.github.io/dataModel.keyPerformanceIndicator/keyPerformanceIndicator/example-normalized-ld.jsonld"
           description: OK
       tags: 
         - ngsi-ld
