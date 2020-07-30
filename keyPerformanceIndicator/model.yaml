@@ -44,7 +44,7 @@ keyPerformanceIndicator:
             items:
               type: string
               minitems: 1
-            description: ''
+      description: ''
     area:
       x-ngsi:
         type: Property
@@ -69,6 +69,7 @@ keyPerformanceIndicator:
         - quarterly
         - bimonthly
         - biweekly
+      description: ''
     calculationPeriod:
       x-ngsi:
         model:
@@ -81,6 +82,7 @@ keyPerformanceIndicator:
         to:
           type: string
           format: date-time
+      description: ''
     calculatedBy:
       x-ngsi:
         type: Property
@@ -95,6 +97,7 @@ keyPerformanceIndicator:
         - manual
         - automatic
         - semiautomatic
+      description: ''
     calculationFormula:
       x-ngsi:
         type: Property
@@ -133,18 +136,21 @@ keyPerformanceIndicator:
         - fair
         - bad
         - veryBad
+      description: ''
     dateExpires:
       x-ngsi:
         type: property
         model: "https://schema.org/DateTime"
       type: string
       format: date-time
+      description: ''
     dateNextCalculation:
       x-ngsi:
         type: property
         model: "https://schema.org/DateTime"
       type: string
       format: date
+      description: ''
     dataProvider:
       $ref: >-
         https://smart-data-models.github.io/data-models/fiware-terms.yaml#/dataProvider
@@ -157,11 +163,13 @@ keyPerformanceIndicator:
         model: "https://schema.org/DateTime"
       type: string
       format: date-time
+      description: ''
     kpiValue:
       x-ngsi:
         type: Property
         model:
       type: string, number, boolean, object,array
+      description: ''
     location:
       $ref: >-
         https://smart-data-models.github.io/data-models/ngsi-ld.yaml#/location
