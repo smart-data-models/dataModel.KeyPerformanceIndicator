@@ -29,22 +29,22 @@ keyPerformanceIndicator:
         type: Property
         model:
       type: array
-      items:
-        type: object
-        minitems: 1
-        properties:
-          entityType:
-            x-ngsi:
-              model:
-              type: Property
-            type: string
-          attrs:
-            x-ngsi:
-              model:
-            type: array
-            items:
+        items:
+          type: object
+          minitems: 1
+          properties:
+            entityType:
+              x-ngsi:
+                model:
+                type: Property
               type: string
-              minitems: 1
+            attrs:
+              x-ngsi:
+                model:
+              type: array
+              items:
+                type: string
+                minitems: 1
     area:
       x-ngsi:
         type: Property
