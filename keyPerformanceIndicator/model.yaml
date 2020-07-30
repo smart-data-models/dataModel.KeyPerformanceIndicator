@@ -13,11 +13,10 @@ keyPerformanceIndicator:
     - category
     - calculationPeriod
   allOf:
-    - $ref: >-
-        'https://smart-data-models.github.io/data-models/ngsi-ld.yaml#/Common'
+    - "$ref": https://smart-data-models.github.io/data-models/ngsi-ld.yaml#/Common
   type: object
-  description:
-    'According to Wikipedia a Key Performance Indicator (KPI) is a type of performance measurement. KPIs evaluate the success of an organization or of a particular activity in which it engages. The present data model defines a type of NGSI entity which captures the value and associated details of a key performance indicator. The data model is flexible enough to accommodate different usage scenarios: An entity per KPI calculation or a unique entity per KPI which value evolves along time. Please note that in the latter case a historical module, such as the STH, would have to take care of the KPI evolution'
+  description: |
+    According to Wikipedia a Key Performance Indicator (KPI) is a type of performance measurement. KPIs evaluate the success of an organization or of a particular activity in which it engages. The present data model defines a type of NGSI entity which captures the value and associated details of a key performance indicator. The data model is flexible enough to accommodate different usage scenarios: An entity per KPI calculation or a unique entity per KPI which value evolves along time. Please note that in the latter case a historical module, such as the STH, would have to take care of the KPI evolution
   properties:
     address:
       $ref: >-
