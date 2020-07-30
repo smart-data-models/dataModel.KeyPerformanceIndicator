@@ -16,11 +16,10 @@ keyPerformanceIndicator:
     - "$ref": https://smart-data-models.github.io/data-models/ngsi-ld.yaml#/Common
   type: object
   description: |
-    According to Wikipedia a Key Performance Indicator (KPI) is a type of performance measurement. KPIs evaluate the success of an organization or of a particular activity in which it engages. The present data model defines a type of NGSI entity which captures the value and associated details of a key performance indicator. The data model is flexible enough to accommodate different usage scenarios: An entity per KPI calculation or a unique entity per KPI which value evolves along time. Please note that in the latter case a historical module, such as the STH, would have to take care of the KPI evolution
+    According to Wikipedia a Key Performance Indicator (KPI) is a type of performance measurement. KPIs evaluate the success of an organization or of a particular activity in which it engages. The present data model defines a type of NGSI entity which captures the value and associated details of a key performance indicator. The data model is flexible enough to accommodate different usage scenarios: An entity per KPI calculation or a unique entity per KPI which value evolves along time. Please note that in the latter case a historical module, such as the STH, would have to take care of the KPI evolution..
   properties:
     address:
-      $ref: >-
-        https://smart-data-models.github.io/data-models/schema.org.yaml#/address
+      "$ref": https://smart-data-models.github.io/data-models/schema.org.yaml#/address
     alternateName:
       $ref: >-
         https://smart-data-models.github.io/data-models/schema.org.yaml#/alternateName
@@ -29,22 +28,23 @@ keyPerformanceIndicator:
         type: Property
         model:
       type: array
-        items:
-          type: object
-          minitems: 1
-          properties:
-            entityType:
-              x-ngsi:
-                model:
-                type: Property
+      items:
+        type: object
+        minitems: 1
+        properties:
+          entityType:
+            x-ngsi:
+              model:
+              type: Property
+            type: string
+          attrs:
+            x-ngsi:
+              model:
+            type: array
+            items:
               type: string
-            attrs:
-              x-ngsi:
-                model:
-              type: array
-              items:
-                type: string
-                minitems: 1
+              minitems: 1
+            description: ''
     area:
       x-ngsi:
         type: Property
@@ -95,7 +95,7 @@ keyPerformanceIndicator:
         - manual
         - automatic
         - semiautomatic
-    calculationFormula: ''
+    calculationFormula:
       x-ngsi:
         type: Property
       type: string
