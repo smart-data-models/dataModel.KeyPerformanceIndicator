@@ -1,7 +1,5 @@
 # KeyPerformanceIndicator
 
-# Key Performance Indicator
-
 According to [Wikipedia](https://en.wikipedia.org/wiki/Performance_indicator) a
 Key Performance Indicator (KPI) is a type of performance measurement. KPIs
 evaluate the success of an organization or of a particular activity in which it
