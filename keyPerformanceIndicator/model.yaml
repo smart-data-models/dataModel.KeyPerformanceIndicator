@@ -5,6 +5,13 @@
 keyPerformanceIndicator:
   required:
     - id
+    - type
+    - name
+    - organization
+    - kpiValue
+    - calculationFrequency
+    - category
+    - calculationPeriod
   allOf:
     - $ref: >-
         https://smart-data-models.github.io/data-models/ngsi-ld.yaml#/Common
@@ -12,8 +19,185 @@ keyPerformanceIndicator:
   description: |
     According to Wikipedia a Key Performance Indicator (KPI) is a type of performance measurement.
     KPIs evaluate the success of an organization or of a particular activity in which it engages.
-    
+
     The present data model defines a type of NGSI entity which captures the value and associated details of a key performance
     indicator. The data model is flexible enough to accommodate different usage scenarios: An entity per KPI calculation or 
     a unique entity per KPI which value evolves along time. Please note that in the latter case a historical module, such 
     as the STH, would have to take care of the KPI evolution.
+
+  properties:
+    address:
+      $ref: >-
+        https://smart-data-models.github.io/data-models/schema.org.yaml#/address
+    alternateName:
+      $ref: >-
+        https://smart-data-models.github.io/data-models/schema.org.yaml#/alternateName
+    aggregatedData:
+      x-ngsi:
+        type: Property
+        model:
+      type: array
+        items:
+          type: object
+          minitems: 1
+          properties:
+            entityType:
+              x-ngsi:
+                model:
+                type: Property
+              type: string
+            attrs:
+              x-ngsi:
+                model:
+              type: array
+              items:
+                type: string
+                minitems: 1
+
+    area:
+      x-ngsi:
+        type: Property
+      type: string
+        description: ''
+    businessTarget:
+      x-ngsi:
+        type: Property
+      type: string
+      description: ''
+    calculationFrequency:
+      x-ngsi:
+        model:
+      type: string
+      enum:
+        - hourly
+        - daily
+        - weekly
+        - monthly
+        - yearly
+        - quarterly
+        - bimonthly
+        - biweekly
+    calculationPeriod:
+      x-ngsi:
+        model:
+        type: Property
+      type: object
+        properties:
+          from:
+            type: string
+            format: date-time
+          to:
+            type: string
+            format: date-time
+    calculatedBy:
+      x-ngsi:
+        type: Property
+      type: object
+      description: ''
+    calculationMethod:
+      x-ngsi:
+        model:
+      type: string
+      enum:
+        - manual
+        - automatic
+        - semiautomatic
+    calculationFormula: ''
+      x-ngsi:
+        type: Property
+      type: string
+      description: ''
+    category:
+      x-ngsi:
+        model: "https://schema.org/URL"
+        type: Property
+      type: array
+      description: ''
+      minitems: 1
+      items:
+        type: string
+        enum:
+          - actionable
+          - directional
+          - financial
+          - input
+          - leading
+          - lagging
+          - output
+          - process
+          - practical
+          - qualitative
+          - quantitative
+
+    currentStanding:
+      x-ngsi:
+        model:
+        type: Property
+      type: string
+      enum:
+        - veryGood
+        - good
+        - fair
+        - bad
+        - veryBad
+    dateExpires:
+      x-ngsi:
+        type: property
+        model: "https://schema.org/DateTime"
+      type: string
+      format: date-time
+    dateNextCalculation:
+      x-ngsi:
+        type: property
+        model: "https://schema.org/DateTime"
+      type: string
+      format: date
+    dataProvider:
+      $ref: >-
+        https://smart-data-models.github.io/data-models/fiware-terms.yaml#/dataProvider
+    description:
+      $ref: >-
+        https://smart-data-models.github.io/data-models/ngsi-ld.yaml#/description
+    effectiveSince:
+      x-ngsi:
+        type: property
+        model: "https://schema.org/DateTime"
+      type: string
+      format: date-time
+    kpiValue:
+      x-ngsi:
+        type: Property
+        model:
+      type: string, number, boolean, object,array
+    location:
+      $ref: >-
+        https://smart-data-models.github.io/data-models/ngsi-ld.yaml#/location
+    name:
+      $ref: >-
+        https://smart-data-models.github.io/data-models/ngsi-ld.yaml#/name
+    owner:
+      $ref: >-
+        https://smart-data-models.github.io/data-models/fiware-terms.yaml#/owner
+    organization:
+      x-ngsi:
+        type: Property
+      type: object
+      description: ''
+    process:
+      x-ngsi:
+        type: Property
+      type: string
+      description: ''
+    product:
+      x-ngsi:
+        type: Property
+      type: object
+      description: ''
+    provider:
+      x-ngsi:
+        type: Property
+      type: object
+      description: ''
+    source:
+        $ref: >-
+          https://smart-data-models.github.io/data-models/fiware-terms.yaml#/source
