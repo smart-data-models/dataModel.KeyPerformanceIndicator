@@ -1,5 +1,5 @@
 # dataModel.KeyPerformanceIndicator
-Create an [issue](https://github.com/smart-data-models/dataModel.KeyPerformanceIndicator/issues/new/choose) for questions regarding this data models model
+
 
 The following entity types are available:
 - [keyPerformanceIndicator](https://smart-data-models.github.io/dataModel.KeyPerformanceIndicator/keyPerformanceIndicator/README.md
@@ -10,4 +10,5 @@ The following entity types are available:
 [Link](https://smart-data-models.github.io/dataModel.KeyPerformanceIndicator/CONTRIBUTORS.yaml) to the 5 current contributors of the data models of this Subject.
 
 You can raise an [issue](https://github.com/smart-data-models/dataModel.KeyPerformanceIndicator/issues) or submit your [PR](https://github.com/smart-data-models/dataModel.KeyPerformanceIndicator/pulls) on existing data models
+
 
