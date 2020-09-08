@@ -6,7 +6,7 @@ The following entity types are available:
 
 
 
-[Link](https://smart-data-models.github.io/dataModel.KeyPerformanceIndicator//CONTRIBUTORS.yaml) to the 5 current contributors of the data models of this Subject.
+[Link](https://github.com/smart-data-models/dataModel.KeyPerformanceIndicator/blob/master/CONTRIBUTORS.yaml) to the 5 current contributors of the data models of this Subject.
 
 You can raise an [issue](https://github.com/smart-data-models/dataModel.KeyPerformanceIndicator/issues) or submit your [PR](https://github.com/smart-data-models/dataModel.KeyPerformanceIndicator/pulls) on existing data models
 
