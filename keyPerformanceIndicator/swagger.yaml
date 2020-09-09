@@ -48,7 +48,7 @@ paths:
                   summary: "Normalized NGSI-LD"
                   value: 
                     - 
-                      $ref: "https://smart-data-models.github.io/dataModel.keyPerformanceIndicator/keyPerformanceIndicator/examples/example-normalized-ld.jsonld"
+                      $ref: "https://smart-data-models.github.io/dataModel.keyPerformanceIndicator/keyPerformanceIndicator/examples/example-normalized.jsonld"
           description: OK
       tags: 
         - ngsi-ld
