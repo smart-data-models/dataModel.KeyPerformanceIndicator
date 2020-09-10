@@ -13,6 +13,8 @@ Link to the [specification](https://smart-data-models.github.io/dataModel.KeyPer
 
 Link to the [example](https://smart-data-models.github.io/dataModel.KeyPerformanceIndicator/keyPerformanceIndicator/examples/example.json) (keyvalues) for NGSI v2
 
+Link to the [example](https://smart-data-models.github.io/dataModel.KeyPerformanceIndicator/keyPerformanceIndicator/examples/example.jsonld) (keyvalues) for NGSI-LD
+
 Link to the [example](https://smart-data-models.github.io/dataModel.KeyPerformanceIndicator/keyPerformanceIndicator/examples/example-normalized.json) (normalized) for NGSI-V2
 
 Link to the [example](https://smart-data-models.github.io/dataModel.KeyPerformanceIndicator/keyPerformanceIndicator/examples/example-normalized.jsonld) (normalized) for NGSI-LD
