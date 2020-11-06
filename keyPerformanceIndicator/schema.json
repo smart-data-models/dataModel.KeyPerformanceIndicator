@@ -16,7 +16,9 @@
       "properties": {
         "type": {
           "type": "string",
-          "enum": ["KeyPerformanceIndicator"],
+          "enum": [
+            "KeyPerformanceIndicator"
+          ],
           "description": "NGSI Entity type"
         },
         "category": {
@@ -72,7 +74,11 @@
         },
         "calculationMethod": {
           "type": "string",
-          "enum": ["manual", "automatic", "semiautomatic"]
+          "enum": [
+            "manual",
+            "automatic",
+            "semiautomatic"
+          ]
         },
         "calculationFormula": {
           "type": "string"
@@ -94,7 +100,10 @@
                 "minItems": 1
               }
             },
-            "required": ["entityType", "attrs"]
+            "required": [
+              "entityType",
+              "attrs"
+            ]
           }
         },
         "calculationPeriod": {
@@ -109,14 +118,29 @@
               "format": "date"
             }
           },
-          "required": ["from", "to"]
+          "required": [
+            "from",
+            "to"
+          ]
         },
         "currentStanding": {
           "type": "string",
-          "enum": ["veryGood", "good", "fair", "bad", "veryBad"]
+          "enum": [
+            "veryGood",
+            "good",
+            "fair",
+            "bad",
+            "veryBad"
+          ]
         },
         "kpiValue": {
-          "type": ["string", "number", "boolean", "object", "array"]
+          "type": [
+            "string",
+            "number",
+            "boolean",
+            "object",
+            "array"
+          ]
         },
         "effectiveSince": {
           "type": "string",
@@ -140,29 +164,9 @@
       }
     },
     {
-      "allOf": [
-        {
-          "required": [
-            "id",
-            "type",
-            "name",
-            "organization",
-            "kpiValue",
-            "calculationFrequency",
-            "category",
-            "calculationPeriod"
-          ]
-        },
-        {
-          "anyOf": [
-            {
-              "required": ["process"]
-            },
-            {
-              "required": ["product"]
-            }
-          ]
-        }
+      "required": [
+        "id",
+        "type"
       ]
     }
   ]
