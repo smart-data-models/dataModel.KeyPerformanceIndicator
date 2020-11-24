@@ -3,40 +3,7 @@ Entity: keyPerformanceIndicator
 This spec is a temporal version. It is based on the documented properties of schema.json and the resulting model.yaml. It will be incomplete while these two files where not updated. Further info in this [link](https://github.com/smart-data-models/data-models/blob/master/specs/warning_message_new_spec.md)  
 Global description: **A Key Performance Indicator (KPI) is a type of performance measurement. KPIs evaluate the success of an organization or of a particular activity in which it engages.**  
 **List of properties**  
-address: The mailing address.    
-aggregatedData:  Entity(ies) and attribute(s) aggregated by the KPI.    
-alternateName: An alternative name for this item    
-area: For organizational purposes, it allows to add extra textual geographical information such as district, borough, or any other hint which can help to identify the KPI coverage.    
-areaServed: The geographic area where a service or offered item is provided.    
-businessTarget: For informative purposes, the business target to which this KPI is related to.    
-calculatedBy:  The organization in charge of calculating the KPI.    
-calculationFormula: For informative purposes, the formula used for calculating the indicator.    
-calculationFrequency: How often the KPI is calculated. Allowed values: one Of (hourly, daily, weekly, monthly, yearly, quarterly, bimonthly, biweekly). Or any other value meaningful for the application and not covered by the above list.    
-calculationMethod: The calculation method used.    
-calculationPeriod: KPI's period of time.    
-category: Indicator category. Allowed values: (quantitative, qualitative, leading, lagging, input, process, output, practical, directional, actionable, financial). Check Wikipedia for a description of each category listed above. - Any other value meaningful to the application and not covered by the above list.    
-currentStanding: The KPI's current standing as per its kpiValue. Allowed values: one Of (very good, good, fair, bad, very bad)    
-dataProvider: A sequence of characters identifying the provider of the harmonised data entity.    
-dateCreated: Entity creation timestamp. This will usually be allocated by the storage platform.    
-dateExpires: The date on which the KPI will be no longer necessary or meaningful.    
-dateModified: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.    
-dateNextCalculation: Date on which a new calculation of the KPI should be available.    
-description: A description of this item    
-effectiveSince: The date on which the organization created this KPI. This date might be different than the entity creation date.    
-id:     
-kpiValue:  It can be of any type.    
-location:     
-name: The name of this item.    
-organization: Subject organization evaluated by the KPI    
-owner: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
-process: Either process or product must be defined    
-product: Either process or product must be defined    
-provider: Provider of the product or service, if any, that this KPI evaluates.    
-seeAlso:     
-source: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.    
-type: It must be KeyPerformanceIndicator    
-updatedAt: This can be different than the last update date of the KPI's value.    
-## Data Model description of properties  
+address: The mailing address.  aggregatedData:  Entity(ies) and attribute(s) aggregated by the KPI.  alternateName: An alternative name for this item  area: For organizational purposes, it allows to add extra textual geographical information such as district, borough, or any other hint which can help to identify the KPI coverage.  areaServed: The geographic area where a service or offered item is provided.  businessTarget: For informative purposes, the business target to which this KPI is related to.  calculatedBy:  The organization in charge of calculating the KPI.  calculationFormula: For informative purposes, the formula used for calculating the indicator.  calculationFrequency: How often the KPI is calculated. Allowed values: one Of (hourly, daily, weekly, monthly, yearly, quarterly, bimonthly, biweekly). Or any other value meaningful for the application and not covered by the above list.  calculationMethod: The calculation method used.  calculationPeriod: KPI's period of time.  category: Indicator category. Allowed values: (quantitative, qualitative, leading, lagging, input, process, output, practical, directional, actionable, financial). Check Wikipedia for a description of each category listed above. - Any other value meaningful to the application and not covered by the above list.  currentStanding: The KPI's current standing as per its kpiValue. Allowed values: one Of (very good, good, fair, bad, very bad)  dataProvider: A sequence of characters identifying the provider of the harmonised data entity.  dateCreated: Entity creation timestamp. This will usually be allocated by the storage platform.  dateExpires: The date on which the KPI will be no longer necessary or meaningful.  dateModified: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  dateNextCalculation: Date on which a new calculation of the KPI should be available.  description: A description of this item  effectiveSince: The date on which the organization created this KPI. This date might be different than the entity creation date.  id:   kpiValue:  It can be of any type.  location:   name: The name of this item.  organization: Subject organization evaluated by the KPI  owner: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  process: Either process or product must be defined  product: Either process or product must be defined  provider: Provider of the product or service, if any, that this KPI evaluates.  seeAlso:   source: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  type: It must be KeyPerformanceIndicator  updatedAt: This can be different than the last update date of the KPI's value.  ## Data Model description of properties  
 Sorted alphabetically  
 ```yaml  
 keyPerformanceIndicator:    
