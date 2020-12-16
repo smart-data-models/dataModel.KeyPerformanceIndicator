@@ -166,7 +166,7 @@
         "updatedAt": {
           "type": "string",
           "format": "date-time",
-          "description": "Property.Last update date of the KPI data. This can be different than the last update date of the KPI's value."
+          "description": "Property. Last update date of the KPI data. This can be different than the last update date of the KPI's value."
         },
         "area": {
           "type": "string",
