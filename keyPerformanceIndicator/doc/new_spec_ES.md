@@ -5,9 +5,12 @@ Entidad: keyPerformanceIndicator
 
 ## Lista de propiedades  
 
-`address`: La dirección postal.  `aggregatedData`:  Entidad(es) y atributo(s) agregado(s) por el KPI.  `alternateName`: Un nombre alternativo para este artículo  `area`: A efectos de organización, permite añadir información geográfica textual adicional como distrito, municipio o cualquier otra pista que pueda ayudar a identificar la cobertura del KPI.  `areaServed`: La zona geográfica donde se presta un servicio o se ofrece un artículo.  `businessTarget`: A título informativo, el objetivo empresarial con el que se relaciona este KPI.  `calculatedBy`:  La organización encargada de calcular el KPI.  `calculationFormula`: A título informativo, la fórmula utilizada para el cálculo del indicador.  `calculationFrequency`: Con qué frecuencia se calcula el KPI. Valores permitidos: uno de (por hora, diario, semanal, mensual, anual, trimestral, bimensual, quincenal). O cualquier otro valor significativo para la aplicación y que no esté cubierto por la lista anterior.  `calculationMethod`: El método de cálculo utilizado.  `calculationPeriod`: El período de tiempo de KPI.  `category`: Categoría del indicador. Valores permitidos: (cuantitativos, cualitativos, adelantados, atrasados, de entrada, de proceso, de salida, prácticos, direccionales, accionables, financieros). Consulte la Wikipedia para obtener una descripción de cada una de las categorías mencionadas anteriormente. - Cualquier otro valor significativo para la aplicación y que no esté cubierto por la lista anterior.  `currentStanding`: La posición actual del KPI según su valor kpi. Valores permitidos: uno de (muy bueno, bueno, regular, malo, muy malo)  `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  `dateCreated`: Sello de tiempo de creación de la entidad. Normalmente será asignado por la plataforma de almacenamiento.  `dateExpires`: La fecha en la que el KPI ya no será necesario o significativo.  `dateModified`: Sello de tiempo de la última modificación de la entidad. Esta será normalmente asignada por la plataforma de almacenamiento.  `dateNextCalculation`: Fecha en la que debería estar disponible un nuevo cálculo del KPI.  `description`: Una descripción de este artículo  `effectiveSince`: La fecha en la que la organización creó este KPI. Esta fecha podría ser diferente de la fecha de creación de la entidad.  `id`:   `kpiValue`:  Puede ser de cualquier tipo.  `location`:   `name`: El nombre de este artículo.  `organization`: Organización del sujeto evaluada por el KPI  `owner`: Una lista que contiene una secuencia de caracteres codificados JSON que hace referencia a los Ids únicos de los propietarios  `process`: Se debe definir el proceso o el producto  `product`: Se debe definir el proceso o el producto  `provider`: Proveedor del producto o servicio, si lo hay, que este KPI evalúa.  `seeAlso`:   `source`: Una secuencia de caracteres que da como URL la fuente original de los datos de la entidad. Se recomienda que sea el nombre de dominio completamente calificado del proveedor de la fuente, o la URL del objeto fuente.  `type`: Debe ser KeyPerformanceIndicator  `updatedAt`: Esto puede ser diferente a la última fecha de actualización del valor del KPI.  ## Modelo de datos Descripción de las propiedades  
-Ordenados alfabéticamente  
-```yaml  
+- `address`: La dirección postal.  - `aggregatedData`:  Entidad(es) y atributo(s) agregado(s) por el KPI.  - `alternateName`: Un nombre alternativo para este artículo  - `area`: A efectos de organización, permite añadir información geográfica textual adicional como distrito, municipio o cualquier otra pista que pueda ayudar a identificar la cobertura del KPI.  - `areaServed`: La zona geográfica donde se presta un servicio o se ofrece un artículo.  - `businessTarget`: A título informativo, el objetivo empresarial con el que se relaciona este KPI.  - `calculatedBy`:  La organización encargada de calcular el KPI.  - `calculationFormula`: A título informativo, la fórmula utilizada para el cálculo del indicador.  - `calculationFrequency`: Con qué frecuencia se calcula el KPI. Valores permitidos: uno de (por hora, diario, semanal, mensual, anual, trimestral, bimensual, quincenal). O cualquier otro valor significativo para la aplicación y que no esté cubierto por la lista anterior.  - `calculationMethod`: El método de cálculo utilizado.  - `calculationPeriod`: El período de tiempo de KPI.  - `category`: Categoría del indicador. Valores permitidos: (cuantitativos, cualitativos, adelantados, atrasados, de entrada, de proceso, de salida, prácticos, direccionales, accionables, financieros). Consulte la Wikipedia para obtener una descripción de cada una de las categorías mencionadas anteriormente. - Cualquier otro valor significativo para la aplicación y que no esté cubierto por la lista anterior.  - `currentStanding`: La posición actual del KPI según su valor kpi. Valores permitidos: uno de (muy bueno, bueno, regular, malo, muy malo)  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Sello de tiempo de creación de la entidad. Normalmente será asignado por la plataforma de almacenamiento.  - `dateExpires`: La fecha en la que el KPI ya no será necesario o significativo.  - `dateModified`: Sello de tiempo de la última modificación de la entidad. Normalmente será asignado por la plataforma de almacenamiento.  - `dateNextCalculation`: Fecha en la que debería estar disponible un nuevo cálculo del KPI.  - `description`: Una descripción de este artículo  - `effectiveSince`: La fecha en la que la organización creó este KPI. Esta fecha podría ser diferente de la fecha de creación de la entidad.  - `id`:   - `kpiValue`:  Puede ser de cualquier tipo.  - `location`:   - `name`: El nombre de este artículo.  - `organization`: Organización del sujeto evaluada por el KPI  - `owner`: Una lista que contiene una secuencia de caracteres codificados JSON que hace referencia a los Ids únicos de los propietarios  - `process`: Se debe definir el proceso o el producto  - `product`: Se debe definir el proceso o el producto  - `provider`: Proveedor del producto o servicio, si lo hay, que este KPI evalúa.  - `seeAlso`: lista de uri que apunta a recursos adicionales sobre el tema  - `source`: Una secuencia de caracteres que da como URL la fuente original de los datos de la entidad. Se recomienda que sea el nombre de dominio completamente calificado del proveedor de la fuente, o la URL del objeto fuente.  - `type`: Debe ser KeyPerformanceIndicator  - `updatedAt`: Propiedad. Última fecha de actualización de los datos del KPI. Puede ser diferente de la última fecha de actualización del valor del KPI.    
+Propiedades requeridas  
+- `id`  - `type`  ## Modelo de datos Descripción de las propiedades  
+Ordenados alfabéticamente (haga clic para ver los detalles)  
+<details><summary><strong>full yaml details</strong></summary>    
+```yaml  
 keyPerformanceIndicator:    
   description: 'A Key Performance Indicator (KPI) is a type of performance measurement. KPIs evaluate the success of an organization or of a particular activity in which it engages.'    
   properties:    
@@ -328,6 +331,7 @@ keyPerformanceIndicator:
       x-ngsi:    
         model: https://schema.org/provider    
     seeAlso:    
+      description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
         - items:    
             - format: uri    
@@ -336,6 +340,7 @@ keyPerformanceIndicator:
           type: array    
         - format: uri    
           type: string    
+      type: Property    
     source:    
       description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
       type: Property    
@@ -345,14 +350,17 @@ keyPerformanceIndicator:
         - KeyPerformanceIndicator    
       type: Property    
     updatedAt:    
-      description: 'This can be different than the last update date of the KPI''s value.'    
+      description: 'Property.Last update date of the KPI data. This can be different than the last update date of the KPI''s value.'    
       format: date-time    
-      type: 'Property.Last update date of the KPI data'    
+      type: string    
   required:    
     - id    
     - type    
   type: object    
 ```  
+</details>    
+## Ejemplo de cargas útiles  
+#### keyPerformanceIndicator NGSI V2 key-values Example  
 Aquí hay un ejemplo de un indicador de rendimiento de claves en formato JSON como valores de claves. Es compatible con NGSI V2 cuando se utiliza "opciones=valores-clave" y devuelve los datos de contexto de una entidad individual.  
 ```json  
 {  
@@ -384,7 +392,8 @@ keyPerformanceIndicator:
   "process": "Garbage Collection"  
 }  
 ```  
-He aquí un ejemplo de un indicador de rendimiento clave en formato JSON como normalizado. Es compatible con NGSI V2 cuando se utiliza `opciones=valores de la clave` y devuelve los datos de contexto de una entidad individual.  
+#### keyPerformanceIndicator NGSI V2 normalizado Ejemplo  
+He aquí un ejemplo de un indicador de rendimiento clave en formato JSON como normalizado. Es compatible con NGSI V2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
 ```json  
 {  
   "id": "kpi-2016-Ciudad-containers-faults",  
@@ -446,7 +455,8 @@ keyPerformanceIndicator:
   }  
 }  
 ```  
-He aquí un ejemplo de un indicador de rendimiento de claves en formato JSON-LD como valores de claves. Es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+#### keyPerformanceIndicator NGSI-LD key-values Example  
+He aquí un ejemplo de un indicador de rendimiento de claves en formato JSON-LD como valores de claves. Es compatible con NGSI-LD cuando se utiliza "opciones=valores-clave" y devuelve los datos de contexto de una entidad individual.  
 ```json  
 {"@context": ["https://smart-data-models.github.io/data-models/context.jsonld",  
               "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"],  
@@ -469,6 +479,7 @@ keyPerformanceIndicator:
  "provider": {"name": "Cleaning Service Provider S.A."},  
  "type": "KeyPerformanceIndicator"}  
 ```  
+#### keyPerformanceIndicator NGSI-LD normalizado Ejemplo  
 He aquí un ejemplo de un indicador de rendimiento clave en formato JSON-LD normalizado. Es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
 ```json  
 {  
