@@ -1,11 +1,11 @@
 Entidad: keyPerformanceIndicator  
 ================================  
-Esta especificación es una **versión temporal**. Se genera automáticamente a partir de las propiedades documentadas descritas en el schema.json condensadas en el archivo `model.yaml`. Se ha creado un archivo temporal `nuevo_modelo.yaml` en cada modelo de datos para evitar el impacto en los scripts existentes. Por lo tanto, la especificación estará incompleta mientras el schema.json no se actualice al nuevo formato (documentando las propiedades). Una vez actualizado el `modelo.yaml` (`nuevo_modelo.yaml`) necesita ser actualizado también (automáticamente) . Más información en este [link](https://github.com/smart-data-models/data-models/blob/master/specs/warning_message_new_spec.md). Mientras sea un formato provisional cualquier [feedback es bienvenido en este formulario](https://smartdatamodels.org/index.php/submit-an-issue-2/) eligiendo la opción `Feedback on the new specification`.  
+[Licencia abierta](https://github.com/smart-data-models//dataModel.KeyPerformanceIndicator/blob/master/keyPerformanceIndicator/LICENSE.md)  
 Descripción global: **Un Indicador Clave de Rendimiento (KPI) es un tipo de medición del rendimiento. Los KPI evalúan el éxito de una organización o de una actividad en particular en la que participa.**  
 
 ## Lista de propiedades  
 
-- `address`: La dirección postal.  - `aggregatedData`:  Entidad(es) y atributo(s) agregado(s) por el KPI.  - `alternateName`: Un nombre alternativo para este artículo  - `area`: A efectos de organización, permite añadir información geográfica textual adicional como distrito, municipio o cualquier otra pista que pueda ayudar a identificar la cobertura del KPI.  - `areaServed`: La zona geográfica donde se presta un servicio o se ofrece un artículo.  - `businessTarget`: A título informativo, el objetivo empresarial con el que se relaciona este KPI.  - `calculatedBy`:  La organización encargada de calcular el KPI.  - `calculationFormula`: A título informativo, la fórmula utilizada para el cálculo del indicador.  - `calculationFrequency`: Con qué frecuencia se calcula el KPI. Valores permitidos: uno de (por hora, diario, semanal, mensual, anual, trimestral, bimensual, quincenal). O cualquier otro valor significativo para la aplicación y que no esté cubierto por la lista anterior.  - `calculationMethod`: El método de cálculo utilizado.  - `calculationPeriod`: El período de tiempo de KPI.  - `category`: Categoría del indicador. Valores permitidos: (cuantitativos, cualitativos, adelantados, atrasados, de entrada, de proceso, de salida, prácticos, direccionales, accionables, financieros). Consulte la Wikipedia para obtener una descripción de cada una de las categorías mencionadas anteriormente. - Cualquier otro valor significativo para la aplicación y que no esté cubierto por la lista anterior.  - `currentStanding`: La posición actual del KPI según su valor kpi. Valores permitidos: uno de (muy bueno, bueno, regular, malo, muy malo)  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Sello de tiempo de creación de la entidad. Normalmente será asignado por la plataforma de almacenamiento.  - `dateExpires`: La fecha en la que el KPI ya no será necesario o significativo.  - `dateModified`: Sello de tiempo de la última modificación de la entidad. Normalmente será asignado por la plataforma de almacenamiento.  - `dateNextCalculation`: Fecha en la que debería estar disponible un nuevo cálculo del KPI.  - `description`: Una descripción de este artículo  - `effectiveSince`: La fecha en la que la organización creó este KPI. Esta fecha podría ser diferente de la fecha de creación de la entidad.  - `id`:   - `kpiValue`:  Puede ser de cualquier tipo.  - `location`:   - `name`: El nombre de este artículo.  - `organization`: Organización del sujeto evaluada por el KPI  - `owner`: Una lista que contiene una secuencia de caracteres codificados JSON que hace referencia a los Ids únicos de los propietarios  - `process`: Se debe definir el proceso o el producto  - `product`: Se debe definir el proceso o el producto  - `provider`: Proveedor del producto o servicio, si lo hay, que este KPI evalúa.  - `seeAlso`: lista de uri que apunta a recursos adicionales sobre el tema  - `source`: Una secuencia de caracteres que da como URL la fuente original de los datos de la entidad. Se recomienda que sea el nombre de dominio completamente calificado del proveedor de la fuente, o la URL del objeto fuente.  - `type`: Debe ser KeyPerformanceIndicator  - `updatedAt`: Propiedad. Última fecha de actualización de los datos del KPI. Puede ser diferente de la última fecha de actualización del valor del KPI.    
+- `address`: La dirección postal.  - `aggregatedData`:  Entidad(es) y atributo(s) agregado(s) por el KPI.  - `alternateName`: Un nombre alternativo para este artículo  - `area`: A efectos de organización, permite añadir información geográfica textual adicional como distrito, municipio o cualquier otra pista que pueda ayudar a identificar la cobertura del KPI.  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `businessTarget`: A título informativo, el objetivo empresarial con el que se relaciona este KPI.  - `calculatedBy`:  La organización encargada de calcular el KPI.  - `calculationFormula`: A título informativo, la fórmula utilizada para el cálculo del indicador.  - `calculationFrequency`: Con qué frecuencia se calcula el KPI. Valores permitidos: uno de (por hora, diario, semanal, mensual, anual, trimestral, bimensual, quincenal). O cualquier otro valor significativo para la aplicación y que no esté cubierto por la lista anterior.  - `calculationMethod`: El método de cálculo utilizado.  - `calculationPeriod`: El período de tiempo de KPI.  - `category`: Categoría del indicador. Valores permitidos: (cuantitativos, cualitativos, adelantados, atrasados, de entrada, de proceso, de salida, prácticos, direccionales, accionables, financieros). Consulte la Wikipedia para obtener una descripción de cada una de las categorías mencionadas anteriormente. - Cualquier otro valor significativo para la aplicación y que no esté cubierto por la lista anterior.  - `currentStanding`: La posición actual del KPI según su valor kpi. Valores permitidos: uno de (muy bueno, bueno, regular, malo, muy malo)  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Sello de tiempo de creación de la entidad. Normalmente será asignado por la plataforma de almacenamiento.  - `dateExpires`: La fecha en la que el KPI ya no será necesario o significativo.  - `dateModified`: Sello de tiempo de la última modificación de la entidad. Esta será normalmente asignada por la plataforma de almacenamiento.  - `dateNextCalculation`: Fecha en la que debería estar disponible un nuevo cálculo del KPI.  - `description`: Una descripción de este artículo  - `effectiveSince`: La fecha en la que la organización creó este KPI. Esta fecha podría ser diferente de la fecha de creación de la entidad.  - `id`: Identificador único de la entidad  - `kpiValue`:  Puede ser de cualquier tipo.  - `location`:   - `name`: El nombre de este artículo.  - `organization`: Organización del sujeto evaluada por el KPI  - `owner`: Una lista que contiene una secuencia de caracteres codificados JSON que hace referencia a los Ids únicos de los propietarios  - `process`: Se debe definir el proceso o el producto  - `product`: Se debe definir el proceso o el producto  - `provider`: Proveedor del producto o servicio, si lo hay, que este KPI evalúa.  - `seeAlso`: lista de uri que apunta a recursos adicionales sobre el tema  - `source`: Una secuencia de caracteres que da como URL la fuente original de los datos de la entidad. Se recomienda que sea el nombre de dominio completamente calificado del proveedor de la fuente, o la URL del objeto fuente.  - `type`: Debe ser KeyPerformanceIndicator  - `updatedAt`: Última fecha de actualización de los datos del KPI. Esta puede ser diferente a la última fecha de actualización del valor del KPI.    
 Propiedades requeridas  
 - `id`  - `type`  ## Modelo de datos Descripción de las propiedades  
 Ordenados alfabéticamente (haga clic para ver los detalles)  
@@ -18,18 +18,25 @@ keyPerformanceIndicator:
       description: 'The mailing address.'    
       properties:    
         addressCountry:    
+          description: 'Property. The country. For example, Spain. Model:''https://schema.org/Text'''    
           type: string    
         addressLocality:    
+          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/Text'''    
           type: string    
         addressRegion:    
+          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/Text'''    
           type: string    
         areaServed:    
+          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/Text'''    
           type: string    
         postOfficeBoxNumber:    
+          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/Text'''    
           type: string    
         postalCode:    
+          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/Text'''    
           type: string    
         streetAddress:    
+          description: 'Property. The street address. Model:''https://schema.org/Text'''    
           type: string    
       type: Property    
     aggregatedData:    
@@ -53,8 +60,10 @@ keyPerformanceIndicator:
       description: 'For organizational purposes, it allows to add extra textual geographical information such as district, borough, or any other hint which can help to identify the KPI coverage.'    
       type: Property    
     areaServed:    
-      description: 'The geographic area where a service or offered item is provided.'    
+      description: 'The geographic area where a service or offered item is provided'    
       type: Property    
+      x-ngsi:    
+        model: https://schema.org/Text    
     businessTarget:    
       description: 'For informative purposes, the business target to which this KPI is related to.'    
       type: Property    
@@ -156,6 +165,8 @@ keyPerformanceIndicator:
         - description: 'Property. Identifier format of any NGSI entity'    
           format: uri    
           type: string    
+      description: 'Unique identifier of the entity'    
+      type: Property    
     kpiValue:    
       description: ' It can be of any type.'    
       type: Property    
@@ -318,6 +329,7 @@ keyPerformanceIndicator:
       description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
       items:    
         anyOf: *keyperformanceindicator_-_properties_-_owner_-_items_-_anyof    
+        description: 'Property. Unique identifier of the entity'    
       type: Property    
     process:    
       description: 'Either process or product must be defined'    
@@ -350,9 +362,9 @@ keyPerformanceIndicator:
         - KeyPerformanceIndicator    
       type: Property    
     updatedAt:    
-      description: 'Property.Last update date of the KPI data. This can be different than the last update date of the KPI''s value.'    
+      description: 'Last update date of the KPI data. This can be different than the last update date of the KPI''s value.'    
       format: date-time    
-      type: string    
+      type: Property    
   required:    
     - id    
     - type    
