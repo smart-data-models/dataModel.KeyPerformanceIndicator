@@ -9,6 +9,10 @@ According to Wikipedia a Key Performance Indicator (KPI) is a type of performanc
 Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://smart-data-models.github.io/dataModel.KeyPerformanceIndicator/keyPerformanceIndicator/swagger.yaml)
 
 Link to the [specification](https://github.com/smart-data-models/dataModel.KeyPerformanceIndicator/blob/master/keyPerformanceIndicator/doc/spec.md)
+
+Link to the [specification in Spanish](https://github.com/smart-data-models/dataModel.KeyPerformanceIndicator/blob/master/keyPerformanceIndicator/doc/spec_ES.md)
+
+Link to the [specification in French](https://github.com/smart-data-models/dataModel.KeyPerformanceIndicator/blob/master/keyPerformanceIndicator/doc/spec_FR.md)
 ### Examples
 
 Link to the [example](https://smart-data-models.github.io/dataModel.KeyPerformanceIndicator/keyPerformanceIndicator/examples/example.json) (keyvalues) for NGSI v2
