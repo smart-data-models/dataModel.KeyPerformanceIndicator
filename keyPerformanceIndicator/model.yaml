@@ -1,65 +1,67 @@
----
-# Copyright (c) 2020 Contributors to Smart-Data-Models
-# see https://github.com/smart-data-models/dataModel.KeyPerformanceIndicator
-
 keyPerformanceIndicator:
-  required:
-    - id
-    - type
-    - name
-    - organization
-    - kpiValue
-    - calculationFrequency
-    - category
-    - calculationPeriod
-  allOf:
-    - "$ref": https://smart-data-models.github.io/data-models/ngsi-ld.yaml#/Common
-  type: object
-  description: |
-    According to Wikipedia a Key Performance Indicator (KPI) is a type of performance measurement. KPIs evaluate the success of an organization or of a particular activity in which it engages. The present data model defines a type of NGSI entity which captures the value and associated details of a key performance indicator. The data model is flexible enough to accommodate different usage scenarios: An entity per KPI calculation or a unique entity per KPI which value evolves along time. Please note that in the latter case a historical module, such as the STH, would have to take care of the KPI evolution..
+  description: 'A Key Performance Indicator (KPI) is a type of performance measurement. KPIs evaluate the success of an organization or of a particular activity in which it engages.'
   properties:
     address:
-      "$ref": https://smart-data-models.github.io/data-models/schema.org.yaml#/address
-    alternateName:
-      $ref: >-
-        https://smart-data-models.github.io/data-models/schema.org.yaml#/alternateName
+      description: 'The mailing address.'
+      properties:
+        addressCountry:
+          description: 'Property. The country. For example, Spain. Model:''https://schema.org/Text'''
+          type: string
+        addressLocality:
+          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/Text'''
+          type: string
+        addressRegion:
+          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/Text'''
+          type: string
+        areaServed:
+          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/Text'''
+          type: string
+        postOfficeBoxNumber:
+          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/Text'''
+          type: string
+        postalCode:
+          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/Text'''
+          type: string
+        streetAddress:
+          description: 'Property. The street address. Model:''https://schema.org/Text'''
+          type: string
+      type: Property
     aggregatedData:
-      x-ngsi:
-        type: Property
-        model:
-      type: array
+      description: ' Entity(ies) and attribute(s) aggregated by the KPI.'
       items:
-        type: object
-        minitems: 1
         properties:
-          entityType:
-            x-ngsi:
-              model:
-              type: Property
-            type: string
           attrs:
-            x-ngsi:
-              model:
-            type: array
             items:
               type: string
-              minitems: 1
-      description: ''
+            minItems: 1
+            type: array
+          entityType:
+            type: string
+        type: object
+      minItems: 1
+      type: Property
+    alternateName:
+      description: 'An alternative name for this item'
+      type: Property
     area:
+      description: 'For organizational purposes, it allows to add extra textual geographical information such as district, borough, or any other hint which can help to identify the KPI coverage.'
+      type: Property
+    areaServed:
+      description: 'The geographic area where a service or offered item is provided'
+      type: Property
       x-ngsi:
-        type: Property
-        model:
-      type: string
-      description: ''
+        model: https://schema.org/Text
     businessTarget:
-      x-ngsi:
-        type: Property
-      type: string
-      description: ''
+      description: 'For informative purposes, the business target to which this KPI is related to.'
+      type: Property
+    calculatedBy:
+      description: ' The organization in charge of calculating the KPI.'
+      type: Property
+    calculationFormula:
+      description: 'For informative purposes, the formula used for calculating the indicator.'
+      type: Property
     calculationFrequency:
-      x-ngsi:
-        model:
-      type: string
+      description: 'How often the KPI is calculated. Allowed values: one Of (hourly, daily, weekly, monthly, yearly, quarterly, bimonthly, biweekly). Or any other value meaningful for the application and not covered by the above list.'
       enum:
         - hourly
         - daily
@@ -69,136 +71,288 @@ keyPerformanceIndicator:
         - quarterly
         - bimonthly
         - biweekly
-      description: ''
-    calculationPeriod:
-      x-ngsi:
-        model:
-        type: Property
-      type: object
-      properties:
-        from:
-          type: string
-          format: date-time
-        to:
-          type: string
-          format: date-time
-      description: ''
-    calculatedBy:
-      x-ngsi:
-        type: Property
-      type: object
-      description: ''
+      type: Property
     calculationMethod:
-      x-ngsi:
-        model:
-        type: Property
-      type: string
+      description: 'The calculation method used.'
       enum:
         - manual
         - automatic
         - semiautomatic
-      description: ''
-    calculationFormula:
-      x-ngsi:
-        type: Property
-      type: string
-      description: ''
+      type: Property
+    calculationPeriod:
+      description: 'KPI''s period of time.'
+      properties:
+        from:
+          format: date
+          type: string
+        to:
+          format: date
+          type: string
+      type: Property
     category:
-      x-ngsi:
-        model: "https://schema.org/URL"
-        type: Property
-      type: array
-      description: ''
-      minitems: 1
+      description: 'Indicator category. Allowed values: (quantitative, qualitative, leading, lagging, input, process, output, practical, directional, actionable, financial). Check Wikipedia for a description of each category listed above. - Any other value meaningful to the application and not covered by the above list.'
       items:
-        type: string
         enum:
-          - actionable
-          - directional
-          - financial
-          - input
+          - quantitative
+          - qualitative
           - leading
           - lagging
-          - output
+          - input
           - process
+          - output
           - practical
-          - qualitative
-          - quantitative
-
+          - directional
+          - actionable
+          - financial
+        type: string
+      minItems: 1
+      type: Property
     currentStanding:
-      x-ngsi:
-        model:
-        type: Property
-      type: string
+      description: 'The KPI''s current standing as per its kpiValue. Allowed values: one Of (very good, good, fair, bad, very bad)'
       enum:
         - veryGood
         - good
         - fair
         - bad
         - veryBad
-      description: ''
-    dateExpires:
-      x-ngsi:
-        type: property
-        model: "https://schema.org/DateTime"
-      type: string
-      format: date-time
-      description: ''
-    dateNextCalculation:
-      x-ngsi:
-        type: property
-        model: "https://schema.org/DateTime"
-      type: string
-      format: date
-      description: ''
+      type: Property
     dataProvider:
-      $ref: >-
-        https://smart-data-models.github.io/data-models/fiware-terms.yaml#/dataProvider
-    description:
-      $ref: >-
-        https://smart-data-models.github.io/data-models/ngsi-ld.yaml#/description
-    effectiveSince:
-      x-ngsi:
-        type: property
-        model: "https://schema.org/DateTime"
-      type: string
+      description: 'A sequence of characters identifying the provider of the harmonised data entity.'
+      type: Property
+    dateCreated:
+      description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'
       format: date-time
-      description: ''
+      type: Property
+    dateExpires:
+      description: 'The date on which the KPI will be no longer necessary or meaningful.'
+      format: date-time
+      type: Property
+    dateModified:
+      description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'
+      format: date-time
+      type: Property
+    dateNextCalculation:
+      description: 'Date on which a new calculation of the KPI should be available.'
+      format: date
+      type: Property
+    description:
+      description: 'A description of this item'
+      type: Property
+    effectiveSince:
+      description: 'The date on which the organization created this KPI. This date might be different than the entity creation date.'
+      format: date-time
+      type: Property
+    id:
+      anyOf: &keyperformanceindicator_-_properties_-_owner_-_items_-_anyof
+        - description: 'Property. Identifier format of any NGSI entity'
+          maxLength: 256
+          minLength: 1
+          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$
+          type: string
+        - description: 'Property. Identifier format of any NGSI entity'
+          format: uri
+          type: string
+      description: 'Unique identifier of the entity'
+      type: Property
     kpiValue:
-      x-ngsi:
-        type: Property
-        model:
-      type: string, number, boolean, object,array
-      description: ''
+      description: ' It can be of any type.'
+      type: Property
     location:
-      $ref: >-
-        https://smart-data-models.github.io/data-models/ngsi-ld.yaml#/location
+      $id: https://geojson.org/schema/Geometry.json
+      $schema: "http://json-schema.org/draft-07/schema#"
+      oneOf:
+        - properties:
+            bbox:
+              items:
+                type: number
+              minItems: 4
+              type: array
+            coordinates:
+              items:
+                type: number
+              minItems: 2
+              type: array
+            type:
+              enum:
+                - Point
+              type: string
+          required:
+            - type
+            - coordinates
+          title: 'GeoJSON Point'
+          type: object
+        - properties:
+            bbox:
+              items:
+                type: number
+              minItems: 4
+              type: array
+            coordinates:
+              items:
+                items:
+                  type: number
+                minItems: 2
+                type: array
+              minItems: 2
+              type: array
+            type:
+              enum:
+                - LineString
+              type: string
+          required:
+            - type
+            - coordinates
+          title: 'GeoJSON LineString'
+          type: object
+        - properties:
+            bbox:
+              items:
+                type: number
+              minItems: 4
+              type: array
+            coordinates:
+              items:
+                items:
+                  items:
+                    type: number
+                  minItems: 2
+                  type: array
+                minItems: 4
+                type: array
+              type: array
+            type:
+              enum:
+                - Polygon
+              type: string
+          required:
+            - type
+            - coordinates
+          title: 'GeoJSON Polygon'
+          type: object
+        - properties:
+            bbox:
+              items:
+                type: number
+              minItems: 4
+              type: array
+            coordinates:
+              items:
+                items:
+                  type: number
+                minItems: 2
+                type: array
+              type: array
+            type:
+              enum:
+                - MultiPoint
+              type: string
+          required:
+            - type
+            - coordinates
+          title: 'GeoJSON MultiPoint'
+          type: object
+        - properties:
+            bbox:
+              items:
+                type: number
+              minItems: 4
+              type: array
+            coordinates:
+              items:
+                items:
+                  items:
+                    type: number
+                  minItems: 2
+                  type: array
+                minItems: 2
+                type: array
+              type: array
+            type:
+              enum:
+                - MultiLineString
+              type: string
+          required:
+            - type
+            - coordinates
+          title: 'GeoJSON MultiLineString'
+          type: object
+        - properties:
+            bbox:
+              items:
+                type: number
+              minItems: 4
+              type: array
+            coordinates:
+              items:
+                items:
+                  items:
+                    items:
+                      type: number
+                    minItems: 2
+                    type: array
+                  minItems: 4
+                  type: array
+                type: array
+              type: array
+            type:
+              enum:
+                - MultiPolygon
+              type: string
+          required:
+            - type
+            - coordinates
+          title: 'GeoJSON MultiPolygon'
+          type: object
+      title: 'GeoJSON Geometry'
     name:
-      $ref: >-
-        https://smart-data-models.github.io/data-models/ngsi-ld.yaml#/name
-    owner:
-      $ref: >-
-        https://smart-data-models.github.io/data-models/fiware-terms.yaml#/owner
+      description: 'The name of this item.'
+      type: Property
     organization:
+      description: 'Subject organization evaluated by the KPI'
+      type: Property
       x-ngsi:
-        type: Property
-      type: object
-      description: ''
+        model: ' https://schema.org/organization'
+    owner:
+      description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'
+      items:
+        anyOf: *keyperformanceindicator_-_properties_-_owner_-_items_-_anyof
+        description: 'Property. Unique identifier of the entity'
+      type: Property
     process:
-      x-ngsi:
-        type: Property
-      type: string
-      description: ''
+      description: 'Either process or product must be defined'
+      type: Property
     product:
-      x-ngsi:
-        type: Property
-      type: object
-      description: ''
+      description: 'Either process or product must be defined'
+      type: Property
     provider:
+      description: 'Provider of the product or service, if any, that this KPI evaluates.'
+      type: Property
       x-ngsi:
-        type: Property
-      type: object
-      description: ''
+        model: https://schema.org/provider
+    seeAlso:
+      description: 'list of uri pointing to additional resources about the item'
+      oneOf:
+        - items:
+            - format: uri
+              type: string
+          minItems: 1
+          type: array
+        - format: uri
+          type: string
+      type: Property
     source:
-      $ref: >-
-        https://smart-data-models.github.io/data-models/fiware-terms.yaml#/source
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'
+      type: Property
+    type:
+      description: 'It must be KeyPerformanceIndicator'
+      enum:
+        - KeyPerformanceIndicator
+      type: Property
+    updatedAt:
+      description: 'Last update date of the KPI data. This can be different than the last update date of the KPI''s value.'
+      format: date-time
+      type: Property
+  required:
+    - id
+    - type
+  type: object
