@@ -3,13 +3,11 @@
   "type": "KeyPerformanceIndicator",
   "name": "Incidencias-Contenedores-Mensual",
   "description": "Number of incidences raised on containers per month",
-  "category": ["quantitative"],
-  "organization": {
-    "name": "Ayuntamiento de Ciudad"
-  },
-  "provider": {
-    "name": "Cleaning Service Provider S.A."
-  },
+  "category": [
+    "quantitative"
+  ],
+  "organization": "Ayuntamiento de Ciudad",
+  "provider": "Cleaning Service Provider S.A.",
   "kpiValue": 20,
   "currentStanding": "good",
   "calculationPeriod": {

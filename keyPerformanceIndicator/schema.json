@@ -34,11 +34,11 @@
               "input",
               "lagging",
               "leading",
-              "quantitative",
-              "qualitative",
               "output",
               "practical",
-              "process"
+              "process",
+              "qualitative",
+              "quantitative"
             ]
           }
         },

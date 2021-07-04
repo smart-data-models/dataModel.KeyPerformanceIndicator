@@ -2,19 +2,25 @@
   "id": "kpi-2016-Ciudad-containers-faults",
   "type": "KeyPerformanceIndicator",
   "category": {
-    "value": ["quantitative"]
+    "type": "array",
+    "value": [
+      "quantitative"
+    ]
   },
   "dateModified": {
     "type": "DateTime",
     "value": "2016-06-29T15:59:09.224Z"
   },
   "calculationFrequency": {
+    "type": "Text",
     "value": "monthly"
   },
   "description": {
+    "type": "Text",
     "value": "Number of incidences raised on containers per month"
   },
   "currentStanding": {
+    "type": "Text",
     "value": "good"
   },
   "address": {
@@ -25,6 +31,7 @@
     }
   },
   "calculationPeriod": {
+    "type": "StructuredObject",
     "value": {
       "to": "2016-06-30",
       "from": "2016-06-01"
@@ -35,25 +42,27 @@
     "value": "2016-07-31"
   },
   "calculationMethod": {
+    "type": "Text",
     "value": "automatic"
   },
   "provider": {
-    "value": {
-      "name": "Cleaning Service Provider S.A."
-    }
+    "type": "Text",
+    "value": "Cleaning Service Provider S.A."
   },
   "organization": {
-    "value": {
-      "name": "Ayuntamiento de Ciudad"
-    }
+    "type": "Text",
+    "value": "Ayuntamiento de Ciudad"
   },
   "kpiValue": {
+    "type": "Number",
     "value": 20
   },
   "name": {
+    "type": "Text",
     "value": "Incidencias-Contenedores-Mensual"
   },
   "process": {
+    "type": "Text",
     "value": "Garbage Collection"
   }
 }
