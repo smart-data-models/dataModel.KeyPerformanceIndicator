@@ -6,7 +6,7 @@ Version: 0.1.0
 A Key Performance Indicator (KPI) is a type of performance measurement. KPIs evaluate the success of an organization or of a particular activity in which it engages.
 ### Specification
 
-Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://github.com/smart-data-models/dataModel.KeyPerformanceIndicator/blob/master/keyPerformanceIndicator/swagger.yaml)
+Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://raw.githubusercontent.com/smart-data-models/dataModel.KeyPerformanceIndicator/master/keyPerformanceIndicator/swagger.yaml)
 
 Link to the [specification](https://github.com/smart-data-models/dataModel.KeyPerformanceIndicator/blob/master/keyPerformanceIndicator/doc/spec.md)
 
