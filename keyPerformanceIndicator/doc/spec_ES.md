@@ -6,7 +6,7 @@ Entidad: keyPerformanceIndicator
 
 ## Lista de propiedades  
 
-- `address`: La dirección postal  - `aggregatedData`:  Entidad(es) y atributo(s) agregados por el KPI.  - `alternateName`: Un nombre alternativo para este artículo  - `area`: Con fines organizativos, permite añadir información geográfica textual adicional, como el distrito, el municipio o cualquier otra pista que pueda ayudar a identificar la cobertura del KPI.  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `businessTarget`: A efectos informativos, el objetivo empresarial con el que se relaciona este KPI.  - `calculatedBy`: La organización encargada de calcular el KPI.  - `calculationFormula`: A título informativo, la fórmula utilizada para el cálculo del indicador.  - `calculationFrequency`: Con qué frecuencia se calcula el KPI. Valores permitidos: uno de (cada hora, diario, semanal, mensual, anual, trimestral, bimensual, quincenal). O cualquier otro valor significativo para la aplicación y que no esté cubierto por la lista anterior.  - `calculationMethod`: El método de cálculo utilizado.  - `calculationPeriod`: Periodo de tiempo de los KPI's.  - `category`: Categoría del indicador. Valores permitidos: (cuantitativo, cualitativo, líder, rezagado, de entrada, de proceso, de salida, práctico, direccional, accionable, financiero). Consulte la Wikipedia para obtener una descripción de cada una de las categorías enumeradas anteriormente. - Cualquier otro valor significativo para la aplicación y que no esté cubierto por la lista anterior.  - `currentStanding`: La situación actual del KPI según su kpiValue. Valores permitidos: uno de (muy bueno, bueno, regular, malo, muy malo)  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateExpires`: La fecha en la que el KPI dejará de ser necesario o significativo.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `dateNextCalculation`: Fecha en la que debería estar disponible un nuevo cálculo del KPI.  - `description`: Una descripción de este artículo  - `effectiveSince`: La fecha en la que la organización creó este KPI. Esta fecha puede ser diferente de la fecha de creación de la entidad.  - `id`: Identificador único de la entidad  - `kpiValue`:  Puede ser de cualquier tipo.  - `location`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `name`: El nombre de este artículo.  - `organization`: Organización del sujeto evaluado por el KPI  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `process`: Hay que definir el proceso o el producto  - `product`: Hay que definir el proceso o el producto  - `provider`: Proveedor del producto o servicio, si lo hay, que este KPI evalúa.  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen, o la URL del objeto de origen.  - `type`: Debe ser KeyPerformanceIndicator  - `updatedAt`: Fecha de la última actualización de los datos del KPI. Puede ser diferente a la última fecha de actualización del valor del KPI.    
+- `address`: La dirección postal  - `aggregatedData`:  Entidad(es) y atributo(s) agregados por el KPI.  - `alternateName`: Un nombre alternativo para este artículo  - `area`: Con fines organizativos, permite añadir información geográfica textual adicional, como el distrito, el municipio o cualquier otra pista que pueda ayudar a identificar la cobertura del KPI.  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `businessTarget`: A efectos informativos, el objetivo empresarial con el que se relaciona este KPI.  - `calculatedBy`: La organización encargada de calcular el KPI.  - `calculationFormula`: A título informativo, la fórmula utilizada para el cálculo del indicador.  - `calculationFrequency`: Con qué frecuencia se calcula el KPI. Valores permitidos: uno de (cada hora, diario, semanal, mensual, anual, trimestral, bimensual, quincenal). O cualquier otro valor significativo para la aplicación y que no esté cubierto por la lista anterior.  - `calculationMethod`: El método de cálculo utilizado.  - `calculationPeriod`: Periodo de tiempo de los KPI's.  - `category`: Categoría del indicador. Valores permitidos: (cuantitativo, cualitativo, líder, rezagado, de entrada, de proceso, de salida, práctico, direccional, accionable, financiero). Consulte la Wikipedia para obtener una descripción de cada una de las categorías enumeradas anteriormente. - Cualquier otro valor significativo para la aplicación y que no esté cubierto por la lista anterior.  - `currentStanding`: La situación actual del KPI según su kpiValue. Valores permitidos: uno de (muy bueno, bueno, regular, malo, muy malo)  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateExpires`: La fecha en la que el KPI dejará de ser necesario o significativo.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `dateNextCalculation`: Fecha en la que debería estar disponible un nuevo cálculo del KPI.  - `description`: Una descripción de este artículo  - `effectiveSince`: La fecha en la que la organización creó este KPI. Esta fecha puede ser diferente de la fecha de creación de la entidad.  - `id`: Identificador único de la entidad  - `kpiValue`:  Puede ser de cualquier tipo.  - `location`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `name`: El nombre de este artículo.  - `organization`: Organización del sujeto evaluado por el KPI  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `process`: Hay que definir el proceso o el producto  - `product`: Hay que definir el proceso o el producto  - `provider`: Proveedor del producto o servicio, si lo hay, que este KPI evalúa.  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `type`: Debe ser KeyPerformanceIndicator  - `updatedAt`: Fecha de la última actualización de los datos del KPI. Puede ser diferente a la última fecha de actualización del valor del KPI.    
 Propiedades requeridas  
 - `id`  - `type`  ## Descripción del modelo de datos de las propiedades  
 Ordenados alfabéticamente (haga clic para ver los detalles)  
@@ -36,9 +36,10 @@ keyPerformanceIndicator:
         streetAddress:    
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
-      type: Property    
+      type: object    
       x-ngsi:    
         model: https://schema.org/address    
+        type: Property    
     aggregatedData:    
       description: ' Entity(ies) and attribute(s) aggregated by the KPI.'    
       items:    
@@ -52,27 +53,40 @@ keyPerformanceIndicator:
             type: string    
         type: object    
       minItems: 1    
-      type: Property    
+      type: array    
+      x-ngsi:    
+        type: Property    
     alternateName:    
       description: 'An alternative name for this item'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     area:    
       description: 'For organizational purposes, it allows to add extra textual geographical information such as district, borough, or any other hint which can help to identify the KPI coverage.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     areaServed:    
       description: 'The geographic area where a service or offered item is provided'    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/Text    
+        type: Property    
     businessTarget:    
       description: 'For informative purposes, the business target to which this KPI is related to.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     calculatedBy:    
       description: 'The organization in charge of calculating the KPI.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     calculationFormula:    
       description: 'For informative purposes, the formula used for calculating the indicator.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     calculationFrequency:    
       description: 'How often the KPI is calculated. Allowed values: one Of (hourly, daily, weekly, monthly, yearly, quarterly, bimonthly, biweekly). Or any other value meaningful for the application and not covered by the above list.'    
       enum:    
@@ -84,14 +98,18 @@ keyPerformanceIndicator:
         - quarterly    
         - bimonthly    
         - biweekly    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     calculationMethod:    
       description: 'The calculation method used.'    
       enum:    
         - manual    
         - automatic    
         - semiautomatic    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     calculationPeriod:    
       description: 'KPI''s period of time.'    
       properties:    
@@ -101,7 +119,9 @@ keyPerformanceIndicator:
         to:    
           format: date    
           type: string    
-      type: Property    
+      type: object    
+      x-ngsi:    
+        type: Property    
     category:    
       description: 'Indicator category. Allowed values: (quantitative, qualitative, leading, lagging, input, process, output, practical, directional, actionable, financial). Check Wikipedia for a description of each category listed above. - Any other value meaningful to the application and not covered by the above list.'    
       items:    
@@ -119,7 +139,9 @@ keyPerformanceIndicator:
           - process    
         type: string    
       minItems: 1    
-      type: Property    
+      type: array    
+      x-ngsi:    
+        type: Property    
     currentStanding:    
       description: 'The KPI''s current standing as per its kpiValue. Allowed values: one Of (very good, good, fair, bad, very bad)'    
       enum:    
@@ -128,33 +150,49 @@ keyPerformanceIndicator:
         - fair    
         - bad    
         - veryBad    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     dataProvider:    
       description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     dateCreated:    
       description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
       format: date-time    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     dateExpires:    
       description: 'The date on which the KPI will be no longer necessary or meaningful.'    
       format: date-time    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     dateModified:    
       description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
       format: date-time    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     dateNextCalculation:    
       description: 'Date on which a new calculation of the KPI should be available.'    
       format: date    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     description:    
       description: 'A description of this item'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     effectiveSince:    
       description: 'The date on which the organization created this KPI. This date might be different than the entity creation date.'    
       format: date-time    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     id:    
       anyOf: &keyperformanceindicator_-_properties_-_owner_-_items_-_anyof    
         - description: 'Property. Identifier format of any NGSI entity'    
@@ -166,10 +204,18 @@ keyPerformanceIndicator:
           format: uri    
           type: string    
       description: 'Unique identifier of the entity'    
-      type: Property    
+      x-ngsi:    
+        type: Property    
     kpiValue:    
       description: ' It can be of any type.'    
-      type: Property    
+      type:    
+        - string    
+        - number    
+        - boolean    
+        - object    
+        - array    
+      x-ngsi:    
+        type: Property    
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
@@ -321,32 +367,43 @@ keyPerformanceIndicator:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      type: Geoproperty    
+      x-ngsi:    
+        type: Geoproperty    
     name:    
       description: 'The name of this item.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     organization:    
       description: 'Subject organization evaluated by the KPI'    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: ' https://schema.org/organization'    
+        type: Property    
     owner:    
       description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
       items:    
         anyOf: *keyperformanceindicator_-_properties_-_owner_-_items_-_anyof    
         description: 'Property. Unique identifier of the entity'    
-      type: Property    
+      type: array    
+      x-ngsi:    
+        type: Property    
     process:    
       description: 'Either process or product must be defined'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     product:    
       description: 'Either process or product must be defined'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     provider:    
       description: 'Provider of the product or service, if any, that this KPI evaluates.'    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/provider    
+        type: Property    
     seeAlso:    
       description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
@@ -357,19 +414,26 @@ keyPerformanceIndicator:
           type: array    
         - format: uri    
           type: string    
-      type: Property    
+      x-ngsi:    
+        type: Property    
     source:    
       description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     type:    
       description: 'It must be KeyPerformanceIndicator'    
       enum:    
         - KeyPerformanceIndicator    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     updatedAt:    
       description: 'Last update date of the KPI data. This can be different than the last update date of the KPI''s value.'    
       format: date-time    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
   required:    
     - id    
     - type    
@@ -385,13 +449,11 @@ keyPerformanceIndicator:
   "type": "KeyPerformanceIndicator",  
   "name": "Incidencias-Contenedores-Mensual",  
   "description": "Number of incidences raised on containers per month",  
-  "category": ["quantitative"],  
-  "organization": {  
-    "name": "Ayuntamiento de Ciudad"  
-  },  
-  "provider": {  
-    "name": "Cleaning Service Provider S.A."  
-  },  
+  "category": [  
+    "quantitative"  
+  ],  
+  "organization": "Ayuntamiento de Ciudad",  
+  "provider": "Cleaning Service Provider S.A.",  
   "kpiValue": 20,  
   "currentStanding": "good",  
   "calculationPeriod": {  
@@ -416,19 +478,25 @@ keyPerformanceIndicator:
   "id": "kpi-2016-Ciudad-containers-faults",  
   "type": "KeyPerformanceIndicator",  
   "category": {  
-    "value": ["quantitative"]  
+    "type": "array",  
+    "value": [  
+      "quantitative"  
+    ]  
   },  
   "dateModified": {  
     "type": "DateTime",  
     "value": "2016-06-29T15:59:09.224Z"  
   },  
   "calculationFrequency": {  
+    "type": "Text",  
     "value": "monthly"  
   },  
   "description": {  
+    "type": "Text",  
     "value": "Number of incidences raised on containers per month"  
   },  
   "currentStanding": {  
+    "type": "Text",  
     "value": "good"  
   },  
   "address": {  
@@ -439,6 +507,7 @@ keyPerformanceIndicator:
     }  
   },  
   "calculationPeriod": {  
+    "type": "StructuredObject",  
     "value": {  
       "to": "2016-06-30",  
       "from": "2016-06-01"  
@@ -449,25 +518,27 @@ keyPerformanceIndicator:
     "value": "2016-07-31"  
   },  
   "calculationMethod": {  
+    "type": "Text",  
     "value": "automatic"  
   },  
   "provider": {  
-    "value": {  
-      "name": "Cleaning Service Provider S.A."  
-    }  
+    "type": "Text",  
+    "value": "Cleaning Service Provider S.A."  
   },  
   "organization": {  
-    "value": {  
-      "name": "Ayuntamiento de Ciudad"  
-    }  
+    "type": "Text",  
+    "value": "Ayuntamiento de Ciudad"  
   },  
   "kpiValue": {  
+    "type": "Number",  
     "value": 20  
   },  
   "name": {  
+    "type": "Text",  
     "value": "Incidencias-Contenedores-Mensual"  
   },  
   "process": {  
+    "type": "Text",  
     "value": "Garbage Collection"  
   }  
 }  
@@ -478,7 +549,47 @@ keyPerformanceIndicator:
 {  
   "id": "urn:ngsi-ld:KeyPerformanceIndicator:kpi-2016-Ciudad-containers-faults",  
   "type": "KeyPerformanceIndicator",  
+  "address": {  
+    "addressCountry": "ESP",  
+    "addressLocality": "Ciudad"  
+  },  
+  "calculationFrequency": "monthly",  
+  "calculationMethod": "automatic",  
+  "calculationPeriod": {  
+    "from": "2016-06-01",  
+    "to": "2016-06-30"  
+  },  
+  "category": [  
+    "quantitative"  
+  ],  
+  "currentStanding": "good",  
+  "dateNextCalculation": "2016-07-31Z",  
+  "description": "Number of incidences raised on containers per month",  
+  "kpiValue": 20,  
   "modifiedAt": "2016-06-29T15:59:09.224Z",  
+  "name": "Incidencias-Contenedores-Mensual",  
+  "organization": "Ayuntamiento de Ciudad",  
+  "process": "Garbage Collection",  
+  "provider": "Cleaning Service Provider S.A.",  
+  "@context": [  
+    "https://smartdatamodels.org/context.jsonld",  
+    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
+  ]  
+}  
+```  
+#### keyPerformanceIndicator NGSI-LD normalizado Ejemplo  
+Este es un ejemplo de un keyPerformanceIndicator en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+```json  
+{  
+  "id": "urn:ngsi-ld:KeyPerformanceIndicator:kpi-2016-Ciudad-containers-faults",  
+  "type": "KeyPerformanceIndicator",  
+  "modifiedAt": {  
+    "type": "Property",  
+    "value": {  
+      "@type": "DateTime",  
+      "@value": "2016-06-29T15:59:09.224Z"  
+    }  
+  },  
   "category": {  
     "type": "Property",  
     "value": [  
@@ -525,15 +636,11 @@ keyPerformanceIndicator:
   },  
   "provider": {  
     "type": "Property",  
-    "value": {  
-      "name": "Cleaning Service Provider S.A."  
-    }  
+    "value": "Cleaning Service Provider S.A."  
   },  
   "organization": {  
     "type": "Property",  
-    "value": {  
-      "name": "Ayuntamiento de Ciudad"  
-    }  
+    "value": "Ayuntamiento de Ciudad"  
   },  
   "kpiValue": {  
     "type": "Property",  
@@ -548,50 +655,8 @@ keyPerformanceIndicator:
     "value": "Garbage Collection"  
   },  
   "@context": [  
-    "https://smart-data-models.github.io/data-models/context.jsonld",  
+    "https://smartdatamodels.org/context.jsonld",  
     "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
   ]  
-}  
-```  
-#### keyPerformanceIndicator NGSI-LD normalizado Ejemplo  
-Este es un ejemplo de un keyPerformanceIndicator en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
-```json  
-{  
-  "@context": [  
-    "https://smart-data-models.github.io/data-models/context.jsonld",  
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
-  ],  
-  "address": {  
-    "addressCountry": "ESP",  
-    "addressLocality": "Ciudad",  
-    "type": "PostalAddress"  
-  },  
-  "calculationFrequency": "monthly",  
-  "calculationMethod": "automatic",  
-  "calculationPeriod": {  
-    "from": "2016-06-01",  
-    "to": "2016-06-30"  
-  },  
-  "category": [  
-    "quantitative"  
-  ],  
-  "currentStanding": "good",  
-  "dateNextCalculation": {  
-    "@type": "DateTime",  
-    "@value": "2016-07-31Z"  
-  },  
-  "description": "Number of incidences raised on containers per month",  
-  "id": "urn:ngsi-ld:KeyPerformanceIndicator:kpi-2016-Ciudad-containers-faults",  
-  "kpiValue": 20,  
-  "modifiedAt": "2016-06-29T15:59:09.224Z",  
-  "name": "Incidencias-Contenedores-Mensual",  
-  "organization": {  
-    "name": "Ayuntamiento de Ciudad"  
-  },  
-  "process": "Garbage Collection",  
-  "provider": {  
-    "name": "Cleaning Service Provider S.A."  
-  },  
-  "type": "KeyPerformanceIndicator"  
 }  
 ```  
