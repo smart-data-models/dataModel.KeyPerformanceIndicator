@@ -118,11 +118,11 @@ keyPerformanceIndicator:
           - input
           - lagging
           - leading
-          - quantitative
-          - qualitative
           - output
           - practical
           - process
+          - qualitative
+          - quantitative
         type: string
       minItems: 1
       type: array
@@ -424,3 +424,9 @@ keyPerformanceIndicator:
     - id
     - type
   type: object
+  x-derived-from: ""
+  x-disclaimer: 'copyleft (c) 2021 Contributors to Smart Data Models Program'
+  x-license-url: https://github.com/smart-data-models/dataModel.KeyPerformanceIndicator/blob/master/keyPerformanceIndicator/LICENSE.md
+  x-model-schema: https://smart-data-models.github.io/dataModel.KeyPerformanceIndicator/keyPerformanceIndicator/schema.json
+  x-model-tags: ""
+  x-version: 0.1.0
