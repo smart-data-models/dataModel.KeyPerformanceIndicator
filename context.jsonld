@@ -24,6 +24,7 @@
         "kpiValue": "https://smartdatamodels.org/dataModel.KeyPerformanceIndicator/kpiValue",
         "location": "ngsi-ld:location",
         "name": "https://smartdatamodels.org/name",
+        "ngsi-ld": "https://uri.etsi.org/ngsi-ld/",
         "organization": "https://smartdatamodels.org/dataModel.KeyPerformanceIndicator/organization",
         "owner": "https://smartdatamodels.org/owner",
         "process": "https://smartdatamodels.org/dataModel.KeyPerformanceIndicator/process",
