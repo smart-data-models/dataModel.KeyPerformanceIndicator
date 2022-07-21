@@ -1,18 +1,20 @@
-エンティティ：KeyPerformanceIndicator  
-==============================  
-[オープンライセンス](https://github.com/smart-data-models//dataModel.KeyPerformanceIndicator/blob/master/keyPerformanceIndicator/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな記述です。**KPI（Key Performance Indicator）とは、業績評価の一種である。KPIは、組織や組織が従事する特定の活動の成功を評価するものである。  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+エンティティKeyPerformanceIndicator  
+=============================  
+[オープンライセンス](https://github.com/smart-data-models//dataModel.KeyPerformanceIndicator/blob/master/KeyPerformanceIndicator/LICENSE.md)  
+[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+グローバルな記述です。**主要業績評価指標（KPI）は、業績測定の一種である。KPIは、組織または組織が従事する特定の活動の成功を評価するものである**。  
+バージョン: 0.1.1  
 
-## プロパティのリスト  
+## プロパティ一覧  
 
-- `address`: 郵送先住所  - `aggregatedData`: KPIによって集約されたエンティティ（複数可）と属性。  - `alternateName`: このアイテムの別称  - `area`: 組織的な目的のために、地区、行政区、または KPI の対象範囲を特定するのに役立つその他のヒントなど、テキストによる地理情報を追加することができます。  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `businessTarget`: 参考までに、このKPIが関連するビジネスターゲットを示す。  - `calculatedBy`: KPIの算出を担当する組織。  - `calculationFormula`: 参考までに、本指標の算出に用いた計算式を示します。  - `calculationFrequency`: KPI が計算される頻度。許可された値： 1 つ（毎時、日、週、月、年、四半期、隔週）。または、アプリケーションにとって意味があり、上記のリストでカバーされていないその他の値。  - `calculationMethod`: 使用した計算方法  - `calculationPeriod`: KPIの期間は  - `category`: 指標のカテゴリー。許可された値：（定量的、定性的、先行的、遅行的、入力、プロセス、出力、実用的、方向性、実行可能、財務）。上記の各カテゴリーの説明については、ウィキペディアを参照してください。- アプリケーションにとって意味があり、上記のリストでカバーされていないその他の値。  - `currentStanding`: KPI の現在の状態は、その kpiValue に従います。許可された値： One Of (very good, good, fair, bad, very bad)  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateExpires`: KPIが必要または意味をなさなくなる日。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateNextCalculation`: KPI の新しい計算が可能となる日付。  - `description`: このアイテムの説明  - `effectiveSince`: 組織がこの KPI を作成した日付。この日付は、エンティティの作成日とは異なる場合があります。  - `id`: エンティティのユニークな識別子  - `kpiValue`: 種類は問いません。  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `name`: このアイテムの名前です。  - `organization`: KPIで評価される対象組織  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `process`: プロセスまたはプロダクトのどちらかが定義されなければならない  - `product`: プロセスまたはプロダクトのどちらかが定義されなければならない  - `provider`: この KPI が評価する製品またはサービスの提供者（もしあれば）。  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type`: KeyPerformanceIndicatorである必要があります。  - `updatedAt`: KPI データの最終更新日。これは、KPI の値の最終更新日とは異なる場合があります。    
-必須項目  
-- `id`  - `type`  ## データモデルによるプロパティの記述  
-アルファベット順（クリックすると詳細が表示されます  
+- `address`: 郵送先住所  - `aggregatedData`: KPIによって集計されるエンティティおよび属性。  - `alternateName`: この項目の別称  - `area`: 組織的な目的のために、地区、自治体、またはKPIの範囲を識別するのに役立つその他のヒントなど、追加のテキスト地理情報を追加することができます。  - `areaServed`: サービスまたは提供品が提供される地理的な地域  - `businessTarget`: 参考までに、このKPIが関連する事業目標を示す。  - `calculatedBy`: KPIの算出を担当する組織。  - `calculationFormula`: 参考までに、指標の算出に使用した計算式を掲載する。  - `calculationFrequency`: KPI が計算される頻度。許可された値：1つのOf（毎時、毎日、毎週、毎月、毎年、四半期、隔月、隔週）。または、アプリケーションにとって意味のある、上記のリストに含まれないその他の値。  - `calculationMethod`: 使用した計算方法。  - `calculationPeriod`: KPIの期間。  - `category`: 指標のカテゴリー。許容される値：（定量的、定性的、先行、後行、入力、プロセス、出力、実用的、方向性、実行可能、財務的）。上記の各カテゴリの説明については、Wikipediaを参照してください。- アプリケーションにとって意味があり、上記のリストに含まれないその他の値。  - `currentStanding`: kpiValue による KPI の現在の状態。許可された値： one Of (very good, good, fair, bad, very bad)  - `dataProvider`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateExpires`: KPIが必要または意味を持たなくなる日。  - `dateModified`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateNextCalculation`: KPI の新しい計算が利用可能になるべき日。  - `description`: このアイテムの説明  - `effectiveSince`: 組織がこの KPI を作成した日付。この日付は、エンティティの作成日とは異なる場合があります。  - `id`: エンティティの一意な識別子  - `kpiValue`: 種類は問いません。  - `location`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `name`: このアイテムの名称です。  - `organization`: KPIで評価される対象組織  - `owner`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `process`: プロセスまたは製品のどちらかを定義する必要がある  - `product`: プロセスまたは製品のどちらかを定義する必要がある  - `provider`: このKPIが評価する製品またはサービスの提供者（ある場合）。  - `seeAlso`: 項目に関する追加リソースを指すURIのリスト。  - `source`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type`: KeyPerformanceIndicatorである必要があります。Enum:'KeyPerformanceIndicator'（キーパフォーマンス インジケータ）。  - `updatedAt`: KPI データの最終更新日。これは、KPI 値の最終更新日とは異なる場合があります。    
+必要なプロパティ  
+- `id`  - `type`  ## プロパティのデータモデル記述  
+アルファベット順に並びます（クリックで詳細へ）  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
-keyPerformanceIndicator:    
+KeyPerformanceIndicator:    
   description: 'A Key Performance Indicator (KPI) is a type of performance measurement. KPIs evaluate the success of an organization or of a particular activity in which it engages.'    
   properties:    
     address:    
@@ -132,11 +134,11 @@ keyPerformanceIndicator:
           - input    
           - lagging    
           - leading    
-          - quantitative    
-          - qualitative    
           - output    
           - practical    
           - process    
+          - qualitative    
+          - quantitative    
         type: string    
       minItems: 1    
       type: array    
@@ -422,7 +424,7 @@ keyPerformanceIndicator:
       x-ngsi:    
         type: Property    
     type:    
-      description: 'It must be KeyPerformanceIndicator'    
+      description: 'It must be KeyPerformanceIndicator. Enum:''KeyPerformanceIndicator'''    
       enum:    
         - KeyPerformanceIndicator    
       type: string    
@@ -438,11 +440,17 @@ keyPerformanceIndicator:
     - id    
     - type    
   type: object    
+  x-derived-from: ""    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.KeyPerformanceIndicator/blob/master/KeyPerformanceIndicator/LICENSE.md    
+  x-model-schema: https://smart-data-models.github.io/dataModel.KeyPerformanceIndicator/keyPerformanceIndicator/schema.json    
+  x-model-tags: ""    
+  x-version: 0.1.1    
 ```  
 </details>    
 ## ペイロードの例  
-#### keyPerformanceIndicator NGSI-v2 key-values の例。  
-keyPerformanceIndicatorをkey-valuesとしてJSON-LD形式で作成した例を示します。これは`options=keyValues`を使用した場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### KeyPerformanceIndicator NGSI-v2 key-value Example  
+以下は、KeyPerformanceIndicatorをJSON-LD形式でkey-valuesとした例である。これは、`options=keyValues` を使用した場合に NGSI-v2 と互換性があり、個々のエンティティのコンテキストデータを返します。  
 ```json  
 {  
   "id": "kpi-2016-Ciudad-containers-faults",  
@@ -471,8 +479,8 @@ keyPerformanceIndicator:
   "process": "Garbage Collection"  
 }  
 ```  
-#### keyPerformanceIndicator NGSI-v2 正規化された例。  
-ここでは、正規化されたJSON-LD形式のkeyPerformanceIndicatorの例を示します。これは、オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### KeyPerformanceIndicator NGSI-v2 正規化例  
+以下は、KeyPerformanceIndicator を JSON-LD 形式で正規化した例である。これは、オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
 ```json  
 {  
   "id": "kpi-2016-Ciudad-containers-faults",  
@@ -543,122 +551,120 @@ keyPerformanceIndicator:
   }  
 }  
 ```  
-#### keyPerformanceIndicator NGSI-LD のキーバリューの例。  
-keyPerformanceIndicatorをkey-valuesとしてJSON-LD形式で作成した例を示します。これは、`options=keyValues`を使用した場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### KeyPerformanceIndicator NGSI-LD キー値の例  
+ここでは、KeyPerformanceIndicatorをJSON-LD形式でkey-valuesとして表現した例を示します。これは、`options=keyValues`を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
 ```json  
 {  
-  "id": "urn:ngsi-ld:KeyPerformanceIndicator:kpi-2016-Ciudad-containers-faults",  
-  "type": "KeyPerformanceIndicator",  
-  "address": {  
-    "addressCountry": "ESP",  
-    "addressLocality": "Ciudad"  
-  },  
-  "calculationFrequency": "monthly",  
-  "calculationMethod": "automatic",  
-  "calculationPeriod": {  
-    "from": "2016-06-01",  
-    "to": "2016-06-30"  
-  },  
-  "category": [  
-    "quantitative"  
-  ],  
-  "currentStanding": "good",  
-  "dateNextCalculation": "2016-07-31Z",  
-  "description": "Number of incidences raised on containers per month",  
-  "kpiValue": 20,  
-  "modifiedAt": "2016-06-29T15:59:09.224Z",  
-  "name": "Incidencias-Contenedores-Mensual",  
-  "organization": "Ayuntamiento de Ciudad",  
-  "process": "Garbage Collection",  
-  "provider": "Cleaning Service Provider S.A.",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld",  
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
-  ]  
-}  
-```  
-#### keyPerformanceIndicator NGSI-LD 正規化された例。  
-ここでは、正規化されたJSON-LD形式のkeyPerformanceIndicatorの例を示します。これはオプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
-```json  
-{  
-  "id": "urn:ngsi-ld:KeyPerformanceIndicator:kpi-2016-Ciudad-containers-faults",  
-  "type": "KeyPerformanceIndicator",  
-  "modifiedAt": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2016-06-29T15:59:09.224Z"  
-    }  
-  },  
-  "category": {  
-    "type": "Property",  
-    "value": [  
-      "quantitative"  
+    "id": "urn:ngsi-ld:KeyPerformanceIndicator:kpi-2016-Ciudad-containers-faults",  
+    "type": "KeyPerformanceIndicator",  
+    "address": {  
+        "addressCountry": "ESP",  
+        "addressLocality": "Ciudad"  
+    },  
+    "calculationFrequency": "monthly",  
+    "calculationMethod": "automatic",  
+    "calculationPeriod": {  
+        "from": "2016-06-01",  
+        "to": "2016-06-30"  
+    },  
+    "category": [  
+        "quantitative"  
+    ],  
+    "currentStanding": "good",  
+    "dateNextCalculation": "2016-07-31Z",  
+    "description": "Number of incidences raised on containers per month",  
+    "kpiValue": 20,  
+    "modifiedAt": "2016-06-29T15:59:09.224Z",  
+    "name": "Incidencias-Contenedores-Mensual",  
+    "organization": "Ayuntamiento de Ciudad",  
+    "process": "Garbage Collection",  
+    "provider": "Cleaning Service Provider S.A.",  
+    "@context": [  
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.KeyPerformanceIndicator/master/context.jsonld"  
     ]  
-  },  
-  "calculationFrequency": {  
-    "type": "Property",  
-    "value": "monthly"  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Number of incidences raised on containers per month"  
-  },  
-  "currentStanding": {  
-    "type": "Property",  
-    "value": "good"  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "addressLocality": "Ciudad",  
-      "addressCountry": "ESP",  
-      "type": "PostalAddress"  
-    }  
-  },  
-  "calculationPeriod": {  
-    "type": "Property",  
-    "value": {  
-      "to": "2016-06-30",  
-      "from": "2016-06-01"  
-    }  
-  },  
-  "dateNextCalculation": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2016-07-31Z"  
-    }  
-  },  
-  "calculationMethod": {  
-    "type": "Property",  
-    "value": "automatic"  
-  },  
-  "provider": {  
-    "type": "Property",  
-    "value": "Cleaning Service Provider S.A."  
-  },  
-  "organization": {  
-    "type": "Property",  
-    "value": "Ayuntamiento de Ciudad"  
-  },  
-  "kpiValue": {  
-    "type": "Property",  
-    "value": 20  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Incidencias-Contenedores-Mensual"  
-  },  
-  "process": {  
-    "type": "Property",  
-    "value": "Garbage Collection"  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld",  
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
-  ]  
 }  
 ```  
-
-マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。
+#### KeyPerformanceIndicator NGSI-LD 正規化例  
+以下は、KeyPerformanceIndicator を JSON-LD 形式で正規化した例である。これは、オプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+```json  
+{  
+    "id": "urn:ngsi-ld:KeyPerformanceIndicator:kpi-2016-Ciudad-containers-faults",  
+    "type": "KeyPerformanceIndicator",  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "addressLocality": "Ciudad",  
+            "addressCountry": "ESP",  
+            "type": "PostalAddress"  
+        }  
+    },  
+    "calculationFrequency": {  
+        "type": "Property",  
+        "value": "monthly"  
+    },  
+    "calculationMethod": {  
+        "type": "Property",  
+        "value": "automatic"  
+    },  
+    "calculationPeriod": {  
+        "type": "Property",  
+        "value": {  
+            "to": "2016-06-30",  
+            "from": "2016-06-01"  
+        }  
+    },  
+    "category": {  
+        "type": "Property",  
+        "value": [  
+            "quantitative"  
+        ]  
+    },  
+    "currentStanding": {  
+        "type": "Property",  
+        "value": "good"  
+    },  
+    "dateNextCalculation": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2016-07-31Z"  
+        }  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Number of incidences raised on containers per month"  
+    },  
+    "kpiValue": {  
+        "type": "Property",  
+        "value": 20  
+    },  
+    "modifiedAt": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2016-06-29T15:59:09.224Z"  
+        }  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Incidencias-Contenedores-Mensual"  
+    },  
+    "organization": {  
+        "type": "Property",  
+        "value": "Ayuntamiento de Ciudad"  
+    },  
+    "process": {  
+        "type": "Property",  
+        "value": "Garbage Collection"  
+    },  
+    "provider": {  
+        "type": "Property",  
+        "value": "Cleaning Service Provider S.A."  
+    },  
+    "@context": [  
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
+    ]  
+}  
+```  
+マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
