@@ -1,4 +1,4 @@
-keyPerformanceIndicator:
+KeyPerformanceIndicator:
   description: 'A Key Performance Indicator (KPI) is a type of performance measurement. KPIs evaluate the success of an organization or of a particular activity in which it engages.'
   properties:
     address:
@@ -408,7 +408,7 @@ keyPerformanceIndicator:
       x-ngsi:
         type: Property
     type:
-      description: 'It must be KeyPerformanceIndicator'
+      description: 'It must be KeyPerformanceIndicator. Enum:''KeyPerformanceIndicator'''
       enum:
         - KeyPerformanceIndicator
       type: string
@@ -427,6 +427,6 @@ keyPerformanceIndicator:
   x-derived-from: ""
   x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'
   x-license-url: https://github.com/smart-data-models/dataModel.KeyPerformanceIndicator/blob/master/KeyPerformanceIndicator/LICENSE.md
-  x-model-schema: https://smart-data-models.github.io/dataModel.KeyPerformanceIndicator/KeyPerformanceIndicator/schema.json
+  x-model-schema: https://smart-data-models.github.io/dataModel.KeyPerformanceIndicator/keyPerformanceIndicator/schema.json
   x-model-tags: ""
-  x-version: 0.1.0
+  x-version: 0.1.1
