@@ -4,11 +4,11 @@
 [Licenza aperta](https://github.com/smart-data-models//dataModel.KeyPerformanceIndicator/blob/master/KeyPerformanceIndicator/LICENSE.md)  
 [documento generato automaticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 Descrizione globale: **Un indicatore chiave di prestazione (KPI) è un tipo di misurazione delle prestazioni. I KPI valutano il successo di un'organizzazione o di una particolare attività in cui è impegnata **.  
-versione: 0.1.1  
+versione: 0.2.1  
 
 ## Elenco delle proprietà  
 
-- `address`: L'indirizzo postale  - `aggregatedData`:  Entità e attributi aggregati dal KPI.  - `alternateName`: Un nome alternativo per questa voce  - `area`: Per scopi organizzativi, è possibile aggiungere informazioni geografiche testuali aggiuntive, come distretto, quartiere o qualsiasi altro suggerimento che possa aiutare a identificare la copertura delle KPI.  - `areaServed`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  - `businessTarget`: A scopo informativo, l'obiettivo aziendale a cui questo KPI è correlato.  - `calculatedBy`: L'organizzazione incaricata di calcolare il KPI.  - `calculationFormula`: A scopo informativo, la formula utilizzata per il calcolo dell'indicatore.  - `calculationFrequency`: Con quale frequenza viene calcolato il KPI. Valori ammessi: uno dei seguenti (orario, giornaliero, settimanale, mensile, annuale, trimestrale, bimestrale, bisettimanale). O qualsiasi altro valore significativo per l'applicazione e non compreso nell'elenco precedente.  - `calculationMethod`: Il metodo di calcolo utilizzato.  - `calculationPeriod`: Periodo di tempo dei KPI.  - `category`: Categoria dell'indicatore. Valori ammessi: (quantitativo, qualitativo, leading, lagging, input, process, output, pratico, direzionale, actionable, finanziario). Consultare Wikipedia per una descrizione di ciascuna categoria sopra elencata. - Qualsiasi altro valore significativo per l'applicazione e non compreso nell'elenco precedente.  - `currentStanding`: La posizione attuale del KPI in base al suo kpiValue. Valori ammessi: uno di (molto buono, buono, discreto, cattivo, molto cattivo)  - `dataProvider`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `dateExpires`: La data in cui l'ICP non sarà più necessario o significativo.  - `dateModified`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `dateNextCalculation`: Data in cui dovrebbe essere disponibile un nuovo calcolo dell'ICP.  - `description`: Descrizione dell'articolo  - `effectiveSince`: La data in cui l'organizzazione ha creato questo KPI. Questa data potrebbe essere diversa dalla data di creazione dell'entità.  - `id`: Identificatore univoco dell'entità  - `kpiValue`:  Può essere di qualsiasi tipo.  - `location`: Riferimento geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `name`: Il nome di questo elemento.  - `organization`: Organizzazione oggetto di valutazione dell'ICP  - `owner`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `process`: È necessario definire il processo o il prodotto  - `product`: È necessario definire il processo o il prodotto  - `provider`: Fornitore del prodotto o servizio, se presente, che questo KPI valuta.  - `seeAlso`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `type`: Deve essere KeyPerformanceIndicator. Enum:'Indicatore di prestazioni chiave'  - `updatedAt`: Data dell'ultimo aggiornamento dei dati del KPI. Questa può essere diversa dalla data di ultimo aggiornamento del valore del KPI.    
+- `address`: L'indirizzo postale  - `aggregatedData`:  Entità e attributi aggregati dal KPI.  - `alternateName`: Un nome alternativo per questa voce  - `area`: Per scopi organizzativi, è possibile aggiungere informazioni geografiche testuali aggiuntive, come distretto, quartiere o qualsiasi altro suggerimento che possa aiutare a identificare la copertura delle KPI.  - `areaServed`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  - `businessTarget`: A scopo informativo, l'obiettivo aziendale a cui questo KPI è correlato.  - `calculatedBy`: L'organizzazione incaricata di calcolare il KPI.  - `calculationFormula`: A scopo informativo, la formula utilizzata per il calcolo dell'indicatore.  - `calculationFrequency`: Con quale frequenza viene calcolato il KPI. Valori ammessi: uno dei seguenti (orario, giornaliero, settimanale, mensile, annuale, trimestrale, bimestrale, bisettimanale). O qualsiasi altro valore significativo per l'applicazione e non compreso nell'elenco precedente.  - `calculationMethod`: Il metodo di calcolo utilizzato.  - `calculationPeriod`: Periodo di tempo dei KPI.  - `category`: Categoria dell'indicatore. Valori ammessi: (quantitativo, qualitativo, leading, lagging, input, process, output, pratico, direzionale, actionable, finanziario). Consultare Wikipedia per una descrizione di ciascuna categoria sopra elencata. - Qualsiasi altro valore significativo per l'applicazione e non compreso nell'elenco precedente.  - `currentStanding`: La posizione attuale del KPI in base al suo kpiValue. Valori ammessi: uno di (molto buono, buono, discreto, cattivo, molto cattivo)  - `dataProvider`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `dateExpires`: La data in cui l'ICP non sarà più necessario o significativo.  - `dateModified`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `dateNextCalculation`: Data in cui dovrebbe essere disponibile un nuovo calcolo dell'ICP.  - `description`: Descrizione dell'articolo  - `effectiveSince`: La data in cui l'organizzazione ha creato questo KPI. Questa data potrebbe essere diversa dalla data di creazione dell'entità.  - `id`: Identificatore univoco dell'entità  - `kpiValue`: Valore del KPI. Può essere di qualsiasi tipo.  - `location`: Riferimento Geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `name`: Il nome di questo elemento.  - `organization`: Organizzazione oggetto di valutazione dell'ICP  - `owner`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `process`: È necessario definire il processo o il prodotto  - `product`: È necessario definire il processo o il prodotto  - `provider`: Fornitore del prodotto o servizio, se presente, che questo KPI valuta.  - `seeAlso`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `type`: Deve essere KeyPerformanceIndicator. Enum:'Indicatore di prestazioni chiave'  - `updatedAt`: Data dell'ultimo aggiornamento dei dati del KPI. Questa può essere diversa dalla data di ultimo aggiornamento del valore del KPI.    
 Proprietà richieste  
 - `id`  - `type`  ## Modello di dati descrizione delle proprietà  
 Ordinati in ordine alfabetico (clicca per i dettagli)  
@@ -209,13 +209,13 @@ KeyPerformanceIndicator:
       x-ngsi:    
         type: Property    
     kpiValue:    
-      description: ' It can be of any type.'    
-      type:    
-        - string    
-        - number    
-        - boolean    
-        - object    
-        - array    
+      description: 'Value of the KPI. It can be of any type.'    
+      oneOf:    
+        - type: string    
+        - type: number    
+        - type: boolean    
+        - type: object    
+        - type: array    
       x-ngsi:    
         type: Property    
     location:    
@@ -441,11 +441,11 @@ KeyPerformanceIndicator:
     - type    
   type: object    
   x-derived-from: ""    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.KeyPerformanceIndicator/blob/master/KeyPerformanceIndicator/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModel.KeyPerformanceIndicator/keyPerformanceIndicator/schema.json    
   x-model-tags: ""    
-  x-version: 0.1.1    
+  x-version: 0.2.1    
 ```  
 </details>    
 ## Esempi di payload  
