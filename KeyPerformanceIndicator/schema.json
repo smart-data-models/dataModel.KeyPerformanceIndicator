@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.1.1",
+  "$schemaVersion": "0.2.1",
   "modelTags": "",
   "$id": "https://smart-data-models.github.io/dataModel.KeyPerformanceIndicator/keyPerformanceIndicator/schema.json",
   "title": "Key Performance Indicator",
@@ -140,14 +140,14 @@
           ]
         },
         "kpiValue": {
-          "type": [
-            "string",
-            "number",
-            "boolean",
-            "object",
-            "array"
+          "oneOf": [
+            {"type": "string"},
+            {"type": "number"},
+            {"type": "boolean"},
+            {"type": "object"},
+            {"type": "array"}
           ],
-          "description": "Property.  It can be of any type."
+          "description": "Property. Value of the KPI. It can be of any type."
         },
         "effectiveSince": {
           "type": "string",
