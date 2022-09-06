@@ -4,11 +4,11 @@
 [オープンライセンス](https://github.com/smart-data-models//dataModel.KeyPerformanceIndicator/blob/master/KeyPerformanceIndicator/LICENSE.md)  
 [ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 グローバルな記述です。**主要業績評価指標（KPI）は、業績測定の一種である。KPIは、組織または組織が従事する特定の活動の成功を評価するものである**。  
-バージョン: 0.1.1  
+バージョン: 0.2.1  
 
 ## プロパティ一覧  
 
-- `address`: 郵送先住所  - `aggregatedData`: KPIによって集計されるエンティティおよび属性。  - `alternateName`: この項目の別称  - `area`: 組織的な目的のために、地区、自治体、またはKPIの範囲を識別するのに役立つその他のヒントなど、追加のテキスト地理情報を追加することができます。  - `areaServed`: サービスまたは提供品が提供される地理的な地域  - `businessTarget`: 参考までに、このKPIが関連する事業目標を示す。  - `calculatedBy`: KPIの算出を担当する組織。  - `calculationFormula`: 参考までに、指標の算出に使用した計算式を掲載する。  - `calculationFrequency`: KPI が計算される頻度。許可された値：1つのOf（毎時、毎日、毎週、毎月、毎年、四半期、隔月、隔週）。または、アプリケーションにとって意味のある、上記のリストに含まれないその他の値。  - `calculationMethod`: 使用した計算方法。  - `calculationPeriod`: KPIの期間。  - `category`: 指標のカテゴリー。許容される値：（定量的、定性的、先行、後行、入力、プロセス、出力、実用的、方向性、実行可能、財務的）。上記の各カテゴリの説明については、Wikipediaを参照してください。- アプリケーションにとって意味があり、上記のリストに含まれないその他の値。  - `currentStanding`: kpiValue による KPI の現在の状態。許可された値： one Of (very good, good, fair, bad, very bad)  - `dataProvider`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateExpires`: KPIが必要または意味を持たなくなる日。  - `dateModified`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateNextCalculation`: KPI の新しい計算が利用可能になるべき日。  - `description`: このアイテムの説明  - `effectiveSince`: 組織がこの KPI を作成した日付。この日付は、エンティティの作成日とは異なる場合があります。  - `id`: エンティティの一意な識別子  - `kpiValue`: 種類は問いません。  - `location`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `name`: このアイテムの名称です。  - `organization`: KPIで評価される対象組織  - `owner`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `process`: プロセスまたは製品のどちらかを定義する必要がある  - `product`: プロセスまたは製品のどちらかを定義する必要がある  - `provider`: このKPIが評価する製品またはサービスの提供者（ある場合）。  - `seeAlso`: 項目に関する追加リソースを指すURIのリスト。  - `source`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type`: KeyPerformanceIndicatorである必要があります。Enum:'KeyPerformanceIndicator'（キーパフォーマンス インジケータ）。  - `updatedAt`: KPI データの最終更新日。これは、KPI 値の最終更新日とは異なる場合があります。    
+- `address`: 郵送先住所  - `aggregatedData`: KPIによって集計されるエンティティおよび属性。  - `alternateName`: この項目の別称  - `area`: 組織的な目的のために、地区、自治体、またはKPIの範囲を特定するのに役立つその他のヒントなど、追加のテキスト地理情報を追加することが可能です。  - `areaServed`: サービスまたは提供品が提供される地理的な地域  - `businessTarget`: 参考までに、このKPIが関連する事業目標を示す。  - `calculatedBy`: KPIの算出を担当する組織。  - `calculationFormula`: 参考までに、指標の算出に使用した計算式を掲載する。  - `calculationFrequency`: KPI が計算される頻度。許可された値：1つのOf（毎時、毎日、毎週、毎月、毎年、四半期、隔月、隔週）。または、アプリケーションにとって意味のある、上記のリストに含まれないその他の値。  - `calculationMethod`: 使用した計算方法。  - `calculationPeriod`: KPIの期間。  - `category`: 指標のカテゴリー。許容される値：（定量的、定性的、先行、後行、入力、プロセス、出力、実用的、方向性、実行可能、財務的）。上記の各カテゴリの説明については、Wikipediaを参照してください。- アプリケーションにとって意味があり、上記のリストに含まれないその他の値。  - `currentStanding`: kpiValue による KPI の現在の状態。許可された値： one Of (very good, good, fair, bad, very bad)  - `dataProvider`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateExpires`: KPIが必要または意味を持たなくなる日。  - `dateModified`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateNextCalculation`: KPI の新しい計算が利用可能になるべき日。  - `description`: このアイテムの説明  - `effectiveSince`: 組織がこの KPI を作成した日付。この日付は、エンティティの作成日とは異なる場合があります。  - `id`: エンティティの一意な識別子  - `kpiValue`: KPIの値。どのようなタイプでもよい。  - `location`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `name`: このアイテムの名称です。  - `organization`: KPIで評価される対象組織  - `owner`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `process`: プロセスまたは製品のどちらかを定義する必要がある  - `product`: プロセスまたは製品のどちらかを定義する必要がある  - `provider`: このKPIが評価する製品またはサービスの提供者（ある場合）。  - `seeAlso`: 項目に関する追加リソースを指すURIのリスト。  - `source`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type`: KeyPerformanceIndicatorである必要があります。Enum:'KeyPerformanceIndicator'（キーパフォーマンス インジケータ）。  - `updatedAt`: KPI データの最終更新日。これは、KPI 値の最終更新日とは異なる場合があります。    
 必要なプロパティ  
 - `id`  - `type`  ## プロパティのデータモデル記述  
 アルファベット順に並びます（クリックで詳細へ）  
@@ -209,13 +209,13 @@ KeyPerformanceIndicator:
       x-ngsi:    
         type: Property    
     kpiValue:    
-      description: ' It can be of any type.'    
-      type:    
-        - string    
-        - number    
-        - boolean    
-        - object    
-        - array    
+      description: 'Value of the KPI. It can be of any type.'    
+      oneOf:    
+        - type: string    
+        - type: number    
+        - type: boolean    
+        - type: object    
+        - type: array    
       x-ngsi:    
         type: Property    
     location:    
@@ -441,11 +441,11 @@ KeyPerformanceIndicator:
     - type    
   type: object    
   x-derived-from: ""    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.KeyPerformanceIndicator/blob/master/KeyPerformanceIndicator/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModel.KeyPerformanceIndicator/keyPerformanceIndicator/schema.json    
   x-model-tags: ""    
-  x-version: 0.1.1    
+  x-version: 0.2.1    
 ```  
 </details>    
 ## ペイロードの例  
