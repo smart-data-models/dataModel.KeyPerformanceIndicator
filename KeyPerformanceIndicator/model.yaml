@@ -193,13 +193,13 @@ KeyPerformanceIndicator:
       x-ngsi:
         type: Property
     kpiValue:
-      description: ' It can be of any type.'
-      type:
-        - string
-        - number
-        - boolean
-        - object
-        - array
+      description: 'Value of the KPI. It can be of any type.'
+      oneOf:
+        - type: string
+        - type: number
+        - type: boolean
+        - type: object
+        - type: array
       x-ngsi:
         type: Property
     location:
@@ -425,8 +425,8 @@ KeyPerformanceIndicator:
     - type
   type: object
   x-derived-from: ""
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'
   x-license-url: https://github.com/smart-data-models/dataModel.KeyPerformanceIndicator/blob/master/KeyPerformanceIndicator/LICENSE.md
   x-model-schema: https://smart-data-models.github.io/dataModel.KeyPerformanceIndicator/keyPerformanceIndicator/schema.json
   x-model-tags: ""
-  x-version: 0.1.1
+  x-version: 0.2.1
