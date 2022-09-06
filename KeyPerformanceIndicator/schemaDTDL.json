@@ -113,10 +113,7 @@
         {
             "name": "kpiValue",
             "writable": true,
-            "displayName": "kpiValue",
-            "@type": "Property",
-            "schema": null,
-            "comment": " It can be of any type."
+            "displayName": "kpiValue"
         },
         {
             "name": "name",
