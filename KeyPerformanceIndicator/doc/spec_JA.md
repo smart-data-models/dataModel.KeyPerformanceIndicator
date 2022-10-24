@@ -1,17 +1,31 @@
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
 エンティティKeyPerformanceIndicator  
-=============================  
+=============================<!-- /10-Header -->  
+<!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.KeyPerformanceIndicator/blob/master/KeyPerformanceIndicator/LICENSE.md)  
 [ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 グローバルな記述です。**主要業績評価指標（KPI）は、業績測定の一種である。KPIは、組織または組織が従事する特定の活動の成功を評価するものである**。  
 バージョン: 0.2.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## プロパティ一覧  
 
-- `address`: 郵送先住所  - `aggregatedData`: KPIによって集計されるエンティティおよび属性。  - `alternateName`: この項目の別称  - `area`: 組織的な目的のために、地区、自治体、またはKPIの範囲を特定するのに役立つその他のヒントなど、追加のテキスト地理情報を追加することが可能です。  - `areaServed`: サービスまたは提供品が提供される地理的な地域  - `businessTarget`: 参考までに、このKPIが関連する事業目標を示す。  - `calculatedBy`: KPIの算出を担当する組織。  - `calculationFormula`: 参考までに、指標の算出に使用した計算式を掲載する。  - `calculationFrequency`: KPI が計算される頻度。許可された値：1つのOf（毎時、毎日、毎週、毎月、毎年、四半期、隔月、隔週）。または、アプリケーションにとって意味のある、上記のリストに含まれないその他の値。  - `calculationMethod`: 使用した計算方法。  - `calculationPeriod`: KPIの期間。  - `category`: 指標のカテゴリー。許容される値：（定量的、定性的、先行、後行、入力、プロセス、出力、実用的、方向性、実行可能、財務的）。上記の各カテゴリの説明については、Wikipediaを参照してください。- アプリケーションにとって意味があり、上記のリストに含まれないその他の値。  - `currentStanding`: kpiValue による KPI の現在の状態。許可された値： one Of (very good, good, fair, bad, very bad)  - `dataProvider`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateExpires`: KPIが必要または意味を持たなくなる日。  - `dateModified`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateNextCalculation`: KPI の新しい計算が利用可能になるべき日。  - `description`: このアイテムの説明  - `effectiveSince`: 組織がこの KPI を作成した日付。この日付は、エンティティの作成日とは異なる場合があります。  - `id`: エンティティの一意な識別子  - `kpiValue`: KPIの値。どのようなタイプでもよい。  - `location`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `name`: このアイテムの名称です。  - `organization`: KPIで評価される対象組織  - `owner`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `process`: プロセスまたは製品のどちらかを定義する必要がある  - `product`: プロセスまたは製品のどちらかを定義する必要がある  - `provider`: このKPIが評価する製品またはサービスの提供者（ある場合）。  - `seeAlso`: 項目に関する追加リソースを指すURIのリスト。  - `source`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type`: KeyPerformanceIndicatorである必要があります。Enum:'KeyPerformanceIndicator'（キーパフォーマンス インジケータ）。  - `updatedAt`: KPI データの最終更新日。これは、KPI 値の最終更新日とは異なる場合があります。    
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `aggregatedData[array]`: KPIによって集計されるエンティティおよび属性。  - `alternateName[string]`: この項目の別称  - `area[string]`: 組織的な目的のために、地区、自治体、またはKPIの範囲を識別するのに役立つその他のヒントなど、追加のテキスト地理情報を追加することができます。  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `businessTarget[string]`: 参考までに、このKPIが関連する事業目標を示す。  - `calculatedBy[string]`: KPIの算出を担当する組織。  - `calculationFormula[string]`: 参考までに、指標の算出に使用した計算式を掲載する。  - `calculationFrequency[string]`: KPI が計算される頻度。許可された値：1つのOf（毎時、毎日、毎週、毎月、毎年、四半期、隔月、隔週）。または、アプリケーションにとって意味のある、上記のリストに含まれない他の値。  - `calculationMethod[string]`: 使用した計算方法。  - `calculationPeriod[object]`: KPIの期間。  - `category[array]`: 指標のカテゴリー。許容される値：（定量的、定性的、先行、後行、入力、プロセス、出力、実用的、方向性、実行可能、財務的）。上記の各カテゴリの説明については、Wikipediaを参照してください。- アプリケーションにとって意味があり、上記のリストに含まれないその他の値。  - `currentStanding[string]`: kpiValue による KPI の現在の状態。許可された値： one Of (very good, good, fair, bad, very bad)  - `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateExpires[string]`: KPIが必要でなくなる日、または意味がなくなる日。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateNextCalculation[string]`: KPI の新しい計算が利用可能になるべき日。  - `description[string]`: このアイテムの説明  - `effectiveSince[string]`: 組織がこの KPI を作成した日付。この日付は、エンティティの作成日とは異なる場合があります。  - `id[*]`: エンティティの一意な識別子  - `kpiValue[*]`: KPIの値。どのようなタイプでもよい。  - `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `name[string]`: このアイテムの名称です。  - `organization[string]`: KPIで評価される対象組織  . Model: [ https://schema.org/organization]( https://schema.org/organization)- `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `process[string]`: プロセスまたは製品のどちらかを定義する必要がある  - `product[string]`: プロセスまたは製品のどちらかを定義する必要がある  - `provider[string]`: このKPIが評価する製品またはサービスの提供者（ある場合）。  . Model: [https://schema.org/provider](https://schema.org/provider)- `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type[string]`: KeyPerformanceIndicatorである必要があります。Enum:'KeyPerformanceIndicator'（キーパフォーマンス インジケータ）。  - `updatedAt[string]`: KPI データの最終更新日。これは、KPI 値の最終更新日とは異なる場合があります。  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 必要なプロパティ  
-- `id`  - `type`  ## プロパティのデータモデル記述  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## プロパティのデータモデル記述  
 アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 KeyPerformanceIndicator:    
@@ -448,9 +462,14 @@ KeyPerformanceIndicator:
   x-version: 0.2.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
 #### KeyPerformanceIndicator NGSI-v2 key-value Example  
 以下は、KeyPerformanceIndicatorをJSON-LD形式でkey-valuesとした例である。これは、`options=keyValues` を使用した場合に NGSI-v2 と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "kpi-2016-Ciudad-containers-faults",  
@@ -479,8 +498,10 @@ KeyPerformanceIndicator:
   "process": "Garbage Collection"  
 }  
 ```  
+</details>  
 #### KeyPerformanceIndicator NGSI-v2 正規化例  
 以下は、KeyPerformanceIndicator を JSON-LD 形式で正規化した例である。これは、オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "kpi-2016-Ciudad-containers-faults",  
@@ -551,8 +572,10 @@ KeyPerformanceIndicator:
   }  
 }  
 ```  
+</details>  
 #### KeyPerformanceIndicator NGSI-LD キー値の例  
 ここでは、KeyPerformanceIndicatorをJSON-LD形式でkey-valuesとして表現した例を示します。これは、`options=keyValues`を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
     "id": "urn:ngsi-ld:KeyPerformanceIndicator:kpi-2016-Ciudad-containers-faults",  
@@ -585,8 +608,10 @@ KeyPerformanceIndicator:
     ]  
 }  
 ```  
+</details>  
 #### KeyPerformanceIndicator NGSI-LD 正規化例  
 以下は、KeyPerformanceIndicator を JSON-LD 形式で正規化した例である。これは、オプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
     "id": "urn:ngsi-ld:KeyPerformanceIndicator:kpi-2016-Ciudad-containers-faults",  
@@ -663,8 +688,17 @@ KeyPerformanceIndicator:
         "value": "Cleaning Service Provider S.A."  
     },  
     "@context": [  
-        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.KeyPerformanceIndicator/master/context.jsonld"  
     ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
