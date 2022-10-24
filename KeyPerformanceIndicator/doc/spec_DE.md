@@ -1,17 +1,31 @@
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
 Entität: KeyPerformanceIndicator  
-================================  
+================================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Offene Lizenz](https://github.com/smart-data-models//dataModel.KeyPerformanceIndicator/blob/master/KeyPerformanceIndicator/LICENSE.md)  
 [Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Globale Beschreibung: **Ein wichtiger Leistungsindikator (KPI) ist eine Art der Leistungsmessung. KPIs bewerten den Erfolg einer Organisation oder einer bestimmten Aktivität, in der sie tätig ist.**  
 Version: 0.2.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Liste der Eigenschaften  
 
-- `address`: Die Postanschrift  - `aggregatedData`:  Entität(en) und Attribut(e), die durch den KPI aggregiert werden.  - `alternateName`: Ein alternativer Name für diesen Artikel  - `area`: Zu organisatorischen Zwecken können zusätzliche geografische Informationen wie Bezirk, Stadtteil oder andere Hinweise hinzugefügt werden, die zur Identifizierung der KPI-Abdeckung beitragen können.  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `businessTarget`: Zu Informationszwecken: das Unternehmensziel, auf das sich dieser KPI bezieht.  - `calculatedBy`: Die Organisation, die für die Berechnung des KPI zuständig ist.  - `calculationFormula`: Zu Informationszwecken wird die Formel zur Berechnung des Indikators angegeben.  - `calculationFrequency`: Wie oft der KPI berechnet wird. Erlaubte Werte: einer von (stündlich, täglich, wöchentlich, monatlich, jährlich, vierteljährlich, zweimonatlich, vierzehntägig). Oder jeder andere für die Anwendung sinnvolle Wert, der nicht in der obigen Liste enthalten ist.  - `calculationMethod`: Die verwendete Berechnungsmethode.  - `calculationPeriod`: KPIs Zeitraum.  - `category`: Kategorie des Indikators. Erlaubte Werte: (quantitativ, qualitativ, führend, nachlaufend, Input, Prozess, Output, praktisch, richtungsweisend, umsetzbar, finanziell). Eine Beschreibung der oben aufgeführten Kategorien finden Sie in Wikipedia. - Jeder andere Wert, der für die Anwendung von Bedeutung ist und nicht durch die obige Liste abgedeckt wird.  - `currentStanding`: Der aktuelle Stand des KPI gemäß seinem kpiValue. Erlaubte Werte: einer von (sehr gut, gut, mittelmäßig, schlecht, sehr schlecht)  - `dataProvider`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateExpires`: Das Datum, an dem der KPI nicht mehr notwendig oder aussagekräftig sein wird.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `dateNextCalculation`: Datum, an dem eine neue Berechnung der Kennzahl verfügbar sein sollte.  - `description`: Eine Beschreibung dieses Artikels  - `effectiveSince`: Das Datum, an dem die Organisation diesen KPI erstellt hat. Dieses Datum kann sich vom Erstellungsdatum der Entität unterscheiden.  - `id`: Eindeutiger Bezeichner der Entität  - `kpiValue`: Wert des KPI. Er kann von beliebigem Typ sein.  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `name`: Der Name dieses Artikels.  - `organization`: Durch den KPI bewertete Fachorganisation  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `process`: Entweder muss der Prozess oder das Produkt definiert werden  - `product`: Entweder muss der Prozess oder das Produkt definiert werden  - `provider`: Anbieter des Produkts oder der Dienstleistung, das/die mit dieser Kennzahl bewertet wird.  - `seeAlso`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Es wird empfohlen, den voll qualifizierten Domänennamen des Quellanbieters oder die URL des Quellobjekts zu verwenden.  - `type`: Es muss KeyPerformanceIndicator sein. Enum:'KeyPerformanceIndicator'  - `updatedAt`: Letztes Aktualisierungsdatum der KPI-Daten. Dies kann ein anderes Datum sein als das letzte Aktualisierungsdatum des KPI-Wertes.    
+<sup><sub>[*] Wenn es für ein Attribut keinen Typ gibt, kann es mehrere Typen oder verschiedene Formate/Muster haben</sub></sup>.  
+- `address[object]`: Die Postanschrift  . Model: [https://schema.org/address](https://schema.org/address)- `aggregatedData[array]`:  Entität(en) und Attribut(e), die durch den KPI aggregiert werden.  - `alternateName[string]`: Ein alternativer Name für diesen Artikel  - `area[string]`: Zu organisatorischen Zwecken können zusätzliche geografische Informationen wie Bezirk, Stadtteil oder andere Hinweise hinzugefügt werden, die zur Identifizierung der KPI-Abdeckung beitragen können.  - `areaServed[string]`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  . Model: [https://schema.org/Text](https://schema.org/Text)- `businessTarget[string]`: Zu Informationszwecken: das Unternehmensziel, auf das sich dieser KPI bezieht.  - `calculatedBy[string]`: Die Organisation, die für die Berechnung des KPI zuständig ist.  - `calculationFormula[string]`: Zu Informationszwecken wird die Formel zur Berechnung des Indikators angegeben.  - `calculationFrequency[string]`: Wie oft der KPI berechnet wird. Erlaubte Werte: einer von (stündlich, täglich, wöchentlich, monatlich, jährlich, vierteljährlich, zweimonatlich, vierzehntägig). Oder jeder andere für die Anwendung sinnvolle Wert, der nicht in der obigen Liste enthalten ist.  - `calculationMethod[string]`: Die verwendete Berechnungsmethode.  - `calculationPeriod[object]`: KPIs Zeitraum.  - `category[array]`: Kategorie des Indikators. Erlaubte Werte: (quantitativ, qualitativ, führend, nachlaufend, Input, Prozess, Output, praktisch, richtungsweisend, umsetzbar, finanziell). Eine Beschreibung der oben aufgeführten Kategorien finden Sie in Wikipedia. - Jeder andere Wert, der für die Anwendung von Bedeutung ist und nicht durch die obige Liste abgedeckt wird.  - `currentStanding[string]`: Der aktuelle Stand des KPI gemäß seinem kpiValue. Erlaubte Werte: einer von (sehr gut, gut, mittelmäßig, schlecht, sehr schlecht)  - `dataProvider[string]`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated[string]`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateExpires[string]`: Das Datum, an dem der KPI nicht mehr notwendig oder aussagekräftig sein wird.  - `dateModified[string]`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `dateNextCalculation[string]`: Datum, an dem eine neue Berechnung der Kennzahl verfügbar sein soll.  - `description[string]`: Eine Beschreibung dieses Artikels  - `effectiveSince[string]`: Das Datum, an dem die Organisation diesen KPI erstellt hat. Dieses Datum kann sich vom Erstellungsdatum der Entität unterscheiden.  - `id[*]`: Eindeutiger Bezeichner der Entität  - `kpiValue[*]`: Wert des KPI. Er kann von beliebigem Typ sein.  - `location[*]`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `name[string]`: Der Name dieses Artikels.  - `organization[string]`: Durch den KPI bewertete Fachorganisation  . Model: [ https://schema.org/organization]( https://schema.org/organization)- `owner[array]`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `process[string]`: Entweder muss der Prozess oder das Produkt definiert werden  - `product[string]`: Entweder muss der Prozess oder das Produkt definiert werden  - `provider[string]`: Anbieter des Produkts oder der Dienstleistung, das/die mit dieser Kennzahl bewertet wird.  . Model: [https://schema.org/provider](https://schema.org/provider)- `seeAlso[*]`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Es wird empfohlen, den voll qualifizierten Domänennamen des Quellanbieters oder die URL des Quellobjekts zu verwenden.  - `type[string]`: Es muss KeyPerformanceIndicator sein. Enum:'KeyPerformanceIndicator'  - `updatedAt[string]`: Letztes Aktualisierungsdatum der KPI-Daten. Dies kann ein anderes Datum sein als das letzte Aktualisierungsdatum des KPI-Wertes.  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Erforderliche Eigenschaften  
-- `id`  - `type`  ## Datenmodell Beschreibung der Eigenschaften  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## Datenmodell Beschreibung der Eigenschaften  
 Alphabetisch sortiert (für Details anklicken)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 KeyPerformanceIndicator:    
@@ -448,9 +462,14 @@ KeyPerformanceIndicator:
   x-version: 0.2.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Beispiel-Nutzlasten  
 #### KeyPerformanceIndicator NGSI-v2 key-values Beispiel  
 Hier ist ein Beispiel für einen KeyPerformanceIndicator im JSON-LD-Format als Key-Values. Dies ist kompatibel mit NGSI-v2, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "kpi-2016-Ciudad-containers-faults",  
@@ -479,8 +498,10 @@ KeyPerformanceIndicator:
   "process": "Garbage Collection"  
 }  
 ```  
+</details>  
 #### KeyPerformanceIndicator NGSI-v2 normalisiert Beispiel  
 Hier ist ein Beispiel für einen KeyPerformanceIndicator im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "kpi-2016-Ciudad-containers-faults",  
@@ -551,8 +572,10 @@ KeyPerformanceIndicator:
   }  
 }  
 ```  
+</details>  
 #### KeyPerformanceIndicator NGSI-LD key-values Beispiel  
 Hier ist ein Beispiel für einen KeyPerformanceIndicator im JSON-LD-Format als Key-Values. Dies ist kompatibel mit NGSI-LD, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
     "id": "urn:ngsi-ld:KeyPerformanceIndicator:kpi-2016-Ciudad-containers-faults",  
@@ -585,8 +608,10 @@ KeyPerformanceIndicator:
     ]  
 }  
 ```  
+</details>  
 #### KeyPerformanceIndicator NGSI-LD normalisiert Beispiel  
 Hier ist ein Beispiel für einen KeyPerformanceIndicator im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-LD, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
     "id": "urn:ngsi-ld:KeyPerformanceIndicator:kpi-2016-Ciudad-containers-faults",  
@@ -663,8 +688,17 @@ KeyPerformanceIndicator:
         "value": "Cleaning Service Provider S.A."  
     },  
     "@context": [  
-        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.KeyPerformanceIndicator/master/context.jsonld"  
     ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 Siehe [FAQ 10] (https://smartdatamodels.org/index.php/faqs/), um eine Antwort auf die Frage zu erhalten, wie man mit Größeneinheiten umgeht  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
