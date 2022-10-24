@@ -1,17 +1,31 @@
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
 Entité : KeyPerformanceIndicator  
-================================  
+================================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licence ouverte] (https://github.com/smart-data-models//dataModel.KeyPerformanceIndicator/blob/master/KeyPerformanceIndicator/LICENSE.md)  
 [document généré automatiquement] (https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Description globale : **Un indicateur de performance clé (KPI) est un type de mesure de la performance. Les KPI évaluent le succès d'une organisation ou d'une activité particulière dans laquelle elle s'engage.**  
 version : 0.2.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Liste des propriétés  
 
-- `address`: L'adresse postale  - `aggregatedData`:  Entité(s) et attribut(s) agrégés par le KPI.  - `alternateName`: Un nom alternatif pour cet élément  - `area`: À des fins d'organisation, il permet d'ajouter des informations géographiques textuelles supplémentaires telles que le district, l'arrondissement ou tout autre indice qui peut aider à identifier la couverture de l'indicateur de performance clé.  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `businessTarget`: A titre informatif, l'objectif commercial auquel ce KPI est lié.  - `calculatedBy`: L'organisation en charge du calcul de l'ICP.  - `calculationFormula`: A titre informatif, la formule utilisée pour le calcul de l'indicateur.  - `calculationFrequency`: Fréquence de calcul de l'indicateur de performance clé. Valeurs autorisées : une parmi (horaire, quotidien, hebdomadaire, mensuel, annuel, trimestriel, bimensuel, bihebdomadaire). Ou toute autre valeur significative pour l'application et non couverte par la liste ci-dessus.  - `calculationMethod`: La méthode de calcul utilisée.  - `calculationPeriod`: Période de temps de l'ICP.  - `category`: Catégorie d'indicateur. Valeurs autorisées : (quantitatif, qualitatif, avancé, retardé, entrée, processus, sortie, pratique, directionnel, actionnable, financier). Consultez Wikipedia pour obtenir une description de chaque catégorie énumérée ci-dessus. - Toute autre valeur significative pour l'application et non couverte par la liste ci-dessus.  - `currentStanding`: L'état actuel de l'ICP selon sa valeur kpiValue. Valeurs autorisées : un parmi (très bon, bon, moyen, mauvais, très mauvais).  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateExpires`: La date à laquelle le KPI ne sera plus nécessaire ou significatif.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `dateNextCalculation`: Date à laquelle un nouveau calcul de l'ICP devrait être disponible.  - `description`: Une description de cet article  - `effectiveSince`: La date à laquelle l'organisation a créé ce KPI. Cette date peut être différente de la date de création de l'entité.  - `id`: Identifiant unique de l'entité  - `kpiValue`: Valeur de l'ICP. Elle peut être de n'importe quel type.  - `location`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `name`: Le nom de cet élément.  - `organization`: Organisation concernée évaluée par le KPI  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `process`: Il faut définir soit le processus, soit le produit  - `product`: Il faut définir soit le processus, soit le produit  - `provider`: Fournisseur du produit ou du service, le cas échéant, que cet ICP évalue.  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'article  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `type`: Il doit être KeyPerformanceIndicator. Enum : "KeyPerformanceIndicator" (Indicateur de performance clé)  - `updatedAt`: Date de la dernière mise à jour des données de l'ICP. Elle peut être différente de la dernière date de mise à jour de la valeur de l'ICP.    
+<sup><sub>[*] S'il n'y a pas de type dans un attribut, c'est parce qu'il pourrait avoir plusieurs types ou différents formats/modèles</sub></sup>.  
+- `address[object]`: L'adresse postale  . Model: [https://schema.org/address](https://schema.org/address)- `aggregatedData[array]`:  Entité(s) et attribut(s) agrégés par le KPI.  - `alternateName[string]`: Un nom alternatif pour cet élément  - `area[string]`: À des fins d'organisation, il permet d'ajouter des informations géographiques textuelles supplémentaires telles que le district, l'arrondissement ou tout autre indice pouvant aider à identifier la couverture de l'indicateur de performance clé.  - `areaServed[string]`: La zone géographique où un service ou un article offert est fourni  . Model: [https://schema.org/Text](https://schema.org/Text)- `businessTarget[string]`: A titre informatif, l'objectif commercial auquel ce KPI est lié.  - `calculatedBy[string]`: L'organisation en charge du calcul de l'ICP.  - `calculationFormula[string]`: A titre informatif, la formule utilisée pour le calcul de l'indicateur.  - `calculationFrequency[string]`: Fréquence de calcul de l'indicateur de performance clé. Valeurs autorisées : une parmi (horaire, quotidien, hebdomadaire, mensuel, annuel, trimestriel, bimensuel, bihebdomadaire). Ou toute autre valeur significative pour l'application et non couverte par la liste ci-dessus.  - `calculationMethod[string]`: La méthode de calcul utilisée.  - `calculationPeriod[object]`: Période de temps de l'ICP.  - `category[array]`: Catégorie d'indicateur. Valeurs autorisées : (quantitatif, qualitatif, avancé, retardé, entrée, processus, sortie, pratique, directionnel, actionnable, financier). Consultez Wikipedia pour obtenir une description de chaque catégorie énumérée ci-dessus. - Toute autre valeur significative pour l'application et non couverte par la liste ci-dessus.  - `currentStanding[string]`: L'état actuel de l'ICP selon sa valeur kpiValue. Valeurs autorisées : un parmi (très bon, bon, moyen, mauvais, très mauvais).  - `dataProvider[string]`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated[string]`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateExpires[string]`: La date à laquelle le KPI ne sera plus nécessaire ou significatif.  - `dateModified[string]`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `dateNextCalculation[string]`: Date à laquelle un nouveau calcul de l'ICP devrait être disponible.  - `description[string]`: Une description de cet article  - `effectiveSince[string]`: La date à laquelle l'organisation a créé ce KPI. Cette date peut être différente de la date de création de l'entité.  - `id[*]`: Identifiant unique de l'entité  - `kpiValue[*]`: Valeur de l'ICP. Elle peut être de n'importe quel type.  - `location[*]`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `name[string]`: Le nom de cet élément.  - `organization[string]`: Organisation concernée évaluée par le KPI  . Model: [ https://schema.org/organization]( https://schema.org/organization)- `owner[array]`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `process[string]`: Il faut définir soit le processus, soit le produit  - `product[string]`: Il faut définir soit le processus, soit le produit  - `provider[string]`: Fournisseur du produit ou du service, le cas échéant, que cet ICP évalue.  . Model: [https://schema.org/provider](https://schema.org/provider)- `seeAlso[*]`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source[string]`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `type[string]`: Il doit être KeyPerformanceIndicator. Enum : "KeyPerformanceIndicator" (Indicateur de performance clé)  - `updatedAt[string]`: Date de la dernière mise à jour des données de l'ICP. Elle peut être différente de la dernière date de mise à jour de la valeur de l'ICP.  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Propriétés requises  
-- `id`  - `type`  ## Description des propriétés du modèle de données  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## Description des propriétés du modèle de données  
 Classés par ordre alphabétique (cliquez pour plus de détails)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 KeyPerformanceIndicator:    
@@ -448,9 +462,14 @@ KeyPerformanceIndicator:
   x-version: 0.2.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Exemples de charges utiles  
 #### KeyPerformanceIndicator Valeurs-clés NGSI-v2 Exemple  
 Voici un exemple d'un KeyPerformanceIndicator au format JSON-LD sous forme de valeurs-clés. Ceci est compatible avec NGSI-v2 lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "kpi-2016-Ciudad-containers-faults",  
@@ -479,8 +498,10 @@ KeyPerformanceIndicator:
   "process": "Garbage Collection"  
 }  
 ```  
+</details>  
 #### KeyPerformanceIndicator NGSI-v2 normalisé Exemple  
 Voici un exemple d'un KeyPerformanceIndicator au format JSON-LD tel que normalisé. Ce format est compatible avec la NGSI-v2 lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "kpi-2016-Ciudad-containers-faults",  
@@ -551,8 +572,10 @@ KeyPerformanceIndicator:
   }  
 }  
 ```  
+</details>  
 #### KeyPerformanceIndicator Valeurs-clés NGSI-LD Exemple  
 Voici un exemple d'un KeyPerformanceIndicator au format JSON-LD sous forme de valeurs-clés. Ceci est compatible avec NGSI-LD lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
     "id": "urn:ngsi-ld:KeyPerformanceIndicator:kpi-2016-Ciudad-containers-faults",  
@@ -585,8 +608,10 @@ KeyPerformanceIndicator:
     ]  
 }  
 ```  
+</details>  
 #### KeyPerformanceIndicator NGSI-LD normalisé Exemple  
 Voici un exemple d'un KeyPerformanceIndicator au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
     "id": "urn:ngsi-ld:KeyPerformanceIndicator:kpi-2016-Ciudad-containers-faults",  
@@ -663,8 +688,17 @@ KeyPerformanceIndicator:
         "value": "Cleaning Service Provider S.A."  
     },  
     "@context": [  
-        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.KeyPerformanceIndicator/master/context.jsonld"  
     ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 Voir [FAQ 10](https://smartdatamodels.org/index.php/faqs/) pour obtenir une réponse sur la façon de traiter les unités de magnitude.  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
