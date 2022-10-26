@@ -1,17 +1,31 @@
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
 Entity: KeyPerformanceIndicator  
-===============================  
+===============================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Open License](https://github.com/smart-data-models//dataModel.KeyPerformanceIndicator/blob/master/KeyPerformanceIndicator/LICENSE.md)  
 [document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Global description: **A Key Performance Indicator (KPI) is a type of performance measurement. KPIs evaluate the success of an organization or of a particular activity in which it engages.**  
 version: 0.2.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## List of properties  
 
-- `address`: The mailing address  - `aggregatedData`:  Entity(ies) and attribute(s) aggregated by the KPI.  - `alternateName`: An alternative name for this item  - `area`: For organizational purposes, it allows to add extra textual geographical information such as district, borough, or any other hint which can help to identify the KPI coverage.  - `areaServed`: The geographic area where a service or offered item is provided  - `businessTarget`: For informative purposes, the business target to which this KPI is related to.  - `calculatedBy`: The organization in charge of calculating the KPI.  - `calculationFormula`: For informative purposes, the formula used for calculating the indicator.  - `calculationFrequency`: How often the KPI is calculated. Allowed values: one Of (hourly, daily, weekly, monthly, yearly, quarterly, bimonthly, biweekly). Or any other value meaningful for the application and not covered by the above list.  - `calculationMethod`: The calculation method used.  - `calculationPeriod`: KPI's period of time.  - `category`: Indicator category. Allowed values: (quantitative, qualitative, leading, lagging, input, process, output, practical, directional, actionable, financial). Check Wikipedia for a description of each category listed above. - Any other value meaningful to the application and not covered by the above list.  - `currentStanding`: The KPI's current standing as per its kpiValue. Allowed values: one Of (very good, good, fair, bad, very bad)  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateExpires`: The date on which the KPI will be no longer necessary or meaningful.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `dateNextCalculation`: Date on which a new calculation of the KPI should be available.  - `description`: A description of this item  - `effectiveSince`: The date on which the organization created this KPI. This date might be different than the entity creation date.  - `id`: Unique identifier of the entity  - `kpiValue`: Value of the KPI. It can be of any type.  - `location`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `name`: The name of this item.  - `organization`: Subject organization evaluated by the KPI  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `process`: Either process or product must be defined  - `product`: Either process or product must be defined  - `provider`: Provider of the product or service, if any, that this KPI evaluates.  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `type`: It must be KeyPerformanceIndicator. Enum:'KeyPerformanceIndicator'  - `updatedAt`: Last update date of the KPI data. This can be different than the last update date of the KPI's value.    
+<sup><sub>[*] If there is not a type in an attribute is because it could have several types or different formats/patterns</sub></sup>  
+- `address[object]`: The mailing address  . Model: [https://schema.org/address](https://schema.org/address)- `aggregatedData[array]`:  Entity(ies) and attribute(s) aggregated by the KPI.  - `alternateName[string]`: An alternative name for this item  - `area[string]`: For organizational purposes, it allows to add extra textual geographical information such as district, borough, or any other hint which can help to identify the KPI coverage.  - `areaServed[string]`: The geographic area where a service or offered item is provided  . Model: [https://schema.org/Text](https://schema.org/Text)- `businessTarget[string]`: For informative purposes, the business target to which this KPI is related to.  - `calculatedBy[string]`: The organization in charge of calculating the KPI.  - `calculationFormula[string]`: For informative purposes, the formula used for calculating the indicator.  - `calculationFrequency[string]`: How often the KPI is calculated. Allowed values: one Of (hourly, daily, weekly, monthly, yearly, quarterly, bimonthly, biweekly). Or any other value meaningful for the application and not covered by the above list.  - `calculationMethod[string]`: The calculation method used.  - `calculationPeriod[object]`: KPI's period of time.  - `category[array]`: Indicator category. Allowed values: (quantitative, qualitative, leading, lagging, input, process, output, practical, directional, actionable, financial). Check Wikipedia for a description of each category listed above. - Any other value meaningful to the application and not covered by the above list.  - `currentStanding[string]`: The KPI's current standing as per its kpiValue. Allowed values: one Of (very good, good, fair, bad, very bad)  - `dataProvider[string]`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated[string]`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateExpires[string]`: The date on which the KPI will be no longer necessary or meaningful.  - `dateModified[string]`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `dateNextCalculation[string]`: Date on which a new calculation of the KPI should be available.  - `description[string]`: A description of this item  - `effectiveSince[string]`: The date on which the organization created this KPI. This date might be different than the entity creation date.  - `id[*]`: Unique identifier of the entity  - `kpiValue[*]`: Value of the KPI. It can be of any type.  - `location[*]`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `name[string]`: The name of this item.  - `organization[string]`: Subject organization evaluated by the KPI  . Model: [ https://schema.org/organization]( https://schema.org/organization)- `owner[array]`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `process[string]`: Either process or product must be defined  - `product[string]`: Either process or product must be defined  - `provider[string]`: Provider of the product or service, if any, that this KPI evaluates.  . Model: [https://schema.org/provider](https://schema.org/provider)- `seeAlso[*]`: list of uri pointing to additional resources about the item  - `source[string]`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `type[string]`: It must be KeyPerformanceIndicator. Enum:'KeyPerformanceIndicator'  - `updatedAt[string]`: Last update date of the KPI data. This can be different than the last update date of the KPI's value.  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Required properties  
-- `id`  - `type`  ## Data Model description of properties  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## Data Model description of properties  
 Sorted alphabetically (click for details)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 KeyPerformanceIndicator:    
@@ -448,9 +462,14 @@ KeyPerformanceIndicator:
   x-version: 0.2.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Example payloads    
 #### KeyPerformanceIndicator NGSI-v2 key-values Example    
 Here is an example of a KeyPerformanceIndicator in JSON-LD format as key-values. This is compatible with NGSI-v2 when  using `options=keyValues` and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "kpi-2016-Ciudad-containers-faults",  
@@ -479,8 +498,10 @@ KeyPerformanceIndicator:
   "process": "Garbage Collection"  
 }  
 ```  
+</details>  
 #### KeyPerformanceIndicator NGSI-v2 normalized Example    
 Here is an example of a KeyPerformanceIndicator in JSON-LD format as normalized. This is compatible with NGSI-v2 when not using options and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "kpi-2016-Ciudad-containers-faults",  
@@ -551,8 +572,10 @@ KeyPerformanceIndicator:
   }  
 }  
 ```  
+</details>  
 #### KeyPerformanceIndicator NGSI-LD key-values Example    
 Here is an example of a KeyPerformanceIndicator in JSON-LD format as key-values. This is compatible with NGSI-LD when  using `options=keyValues` and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
     "id": "urn:ngsi-ld:KeyPerformanceIndicator:kpi-2016-Ciudad-containers-faults",  
@@ -585,8 +608,10 @@ KeyPerformanceIndicator:
     ]  
 }  
 ```  
+</details>  
 #### KeyPerformanceIndicator NGSI-LD normalized Example    
 Here is an example of a KeyPerformanceIndicator in JSON-LD format as normalized. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
     "id": "urn:ngsi-ld:KeyPerformanceIndicator:kpi-2016-Ciudad-containers-faults",  
@@ -663,8 +688,17 @@ KeyPerformanceIndicator:
         "value": "Cleaning Service Provider S.A."  
     },  
     "@context": [  
-        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.KeyPerformanceIndicator/master/context.jsonld"  
     ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 See [FAQ 10](https://smartdatamodels.org/index.php/faqs/) to get an answer on how to deal with magnitude units  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
