@@ -1,5 +1,6 @@
 {
     "@context": {
+        "KeyPerformanceIndicator": "https://smartdatamodels.org/dataModel.KeyPerformanceIndicator/KeyPerformanceIndicator",
         "address": "https://smartdatamodels.org/address",
         "aggregatedData": "https://smartdatamodels.org/dataModel.KeyPerformanceIndicator/aggregatedData",
         "alternateName": "https://smartdatamodels.org/alternateName",
