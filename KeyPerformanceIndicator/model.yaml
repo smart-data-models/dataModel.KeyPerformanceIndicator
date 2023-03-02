@@ -1,8 +1,8 @@
 KeyPerformanceIndicator:
-  description: 'A Key Performance Indicator (KPI) is a type of performance measurement. KPIs evaluate the success of an organization or of a particular activity in which it engages.'
+  description: A Key Performance Indicator (KPI) is a type of performance measurement. KPIs evaluate the success of an organization or of a particular activity in which it engages.
   properties:
     address:
-      description: 'The mailing address'
+      description: The mailing address
       properties:
         addressCountry:
           description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''
@@ -13,6 +13,9 @@ KeyPerformanceIndicator:
         addressRegion:
           description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''
           type: string
+        district:
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government.'
+          type: string
         postOfficeBoxNumber:
           description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''
           type: string
@@ -21,6 +24,9 @@ KeyPerformanceIndicator:
           type: string
         streetAddress:
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''
+          type: string
+        streetNr:
+          description: Number identifying a specific property on a public street.
           type: string
       type: object
       x-ngsi:
@@ -43,7 +49,7 @@ KeyPerformanceIndicator:
       x-ngsi:
         type: Property
     alternateName:
-      description: 'An alternative name for this item'
+      description: An alternative name for this item
       type: string
       x-ngsi:
         type: Property
@@ -53,7 +59,7 @@ KeyPerformanceIndicator:
       x-ngsi:
         type: Property
     areaServed:
-      description: 'The geographic area where a service or offered item is provided'
+      description: The geographic area where a service or offered item is provided
       type: string
       x-ngsi:
         model: https://schema.org/Text
@@ -64,7 +70,7 @@ KeyPerformanceIndicator:
       x-ngsi:
         type: Property
     calculatedBy:
-      description: 'The organization in charge of calculating the KPI.'
+      description: The organization in charge of calculating the KPI.
       type: string
       x-ngsi:
         type: Property
@@ -88,7 +94,7 @@ KeyPerformanceIndicator:
       x-ngsi:
         type: Property
     calculationMethod:
-      description: 'The calculation method used.'
+      description: The calculation method used.
       enum:
         - manual
         - automatic
@@ -97,7 +103,7 @@ KeyPerformanceIndicator:
       x-ngsi:
         type: Property
     calculationPeriod:
-      description: 'KPI''s period of time.'
+      description: KPI's period of time.
       properties:
         from:
           format: date
@@ -140,60 +146,60 @@ KeyPerformanceIndicator:
       x-ngsi:
         type: Property
     dataProvider:
-      description: 'A sequence of characters identifying the provider of the harmonised data entity.'
+      description: A sequence of characters identifying the provider of the harmonised data entity.
       type: string
       x-ngsi:
         type: Property
     dateCreated:
-      description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'
+      description: Entity creation timestamp. This will usually be allocated by the storage platform.
       format: date-time
       type: string
       x-ngsi:
         type: Property
     dateExpires:
-      description: 'The date on which the KPI will be no longer necessary or meaningful.'
+      description: The date on which the KPI will be no longer necessary or meaningful.
       format: date-time
       type: string
       x-ngsi:
         type: Property
     dateModified:
-      description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.
       format: date-time
       type: string
       x-ngsi:
         type: Property
     dateNextCalculation:
-      description: 'Date on which a new calculation of the KPI should be available.'
+      description: Date on which a new calculation of the KPI should be available.
       format: date
       type: string
       x-ngsi:
         type: Property
     description:
-      description: 'A description of this item'
+      description: A description of this item
       type: string
       x-ngsi:
         type: Property
     effectiveSince:
-      description: 'The date on which the organization created this KPI. This date might be different than the entity creation date.'
+      description: The date on which the organization created this KPI. This date might be different than the entity creation date.
       format: date-time
       type: string
       x-ngsi:
         type: Property
     id:
       anyOf: &keyperformanceindicator_-_properties_-_owner_-_items_-_anyof
-        - description: 'Property. Identifier format of any NGSI entity'
+        - description: Property. Identifier format of any NGSI entity
           maxLength: 256
           minLength: 1
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$
           type: string
-        - description: 'Property. Identifier format of any NGSI entity'
+        - description: Property. Identifier format of any NGSI entity
           format: uri
           type: string
-      description: 'Unique identifier of the entity'
+      description: Unique identifier of the entity
       x-ngsi:
         type: Property
     kpiValue:
-      description: 'Value of the KPI. It can be of any type.'
+      description: Value of the KPI. It can be of any type.
       oneOf:
         - type: string
         - type: number
@@ -205,7 +211,7 @@ KeyPerformanceIndicator:
     location:
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'
       oneOf:
-        - description: 'Geoproperty. Geojson reference to the item. Point'
+        - description: GeoProperty. Geojson reference to the item. Point
           properties:
             bbox:
               items:
@@ -224,9 +230,9 @@ KeyPerformanceIndicator:
           required:
             - type
             - coordinates
-          title: 'GeoJSON Point'
+          title: GeoJSON Point
           type: object
-        - description: 'Geoproperty. Geojson reference to the item. LineString'
+        - description: GeoProperty. Geojson reference to the item. LineString
           properties:
             bbox:
               items:
@@ -248,9 +254,9 @@ KeyPerformanceIndicator:
           required:
             - type
             - coordinates
-          title: 'GeoJSON LineString'
+          title: GeoJSON LineString
           type: object
-        - description: 'Geoproperty. Geojson reference to the item. Polygon'
+        - description: GeoProperty. Geojson reference to the item. Polygon
           properties:
             bbox:
               items:
@@ -274,9 +280,9 @@ KeyPerformanceIndicator:
           required:
             - type
             - coordinates
-          title: 'GeoJSON Polygon'
+          title: GeoJSON Polygon
           type: object
-        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'
+        - description: GeoProperty. Geojson reference to the item. MultiPoint
           properties:
             bbox:
               items:
@@ -297,9 +303,9 @@ KeyPerformanceIndicator:
           required:
             - type
             - coordinates
-          title: 'GeoJSON MultiPoint'
+          title: GeoJSON MultiPoint
           type: object
-        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'
+        - description: GeoProperty. Geojson reference to the item. MultiLineString
           properties:
             bbox:
               items:
@@ -323,9 +329,9 @@ KeyPerformanceIndicator:
           required:
             - type
             - coordinates
-          title: 'GeoJSON MultiLineString'
+          title: GeoJSON MultiLineString
           type: object
-        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'
+        - description: GeoProperty. Geojson reference to the item. MultiLineString
           properties:
             bbox:
               items:
@@ -351,36 +357,36 @@ KeyPerformanceIndicator:
           required:
             - type
             - coordinates
-          title: 'GeoJSON MultiPolygon'
+          title: GeoJSON MultiPolygon
           type: object
       x-ngsi:
-        type: Geoproperty
+        type: GeoProperty
     name:
-      description: 'The name of this item.'
+      description: The name of this item.
       type: string
       x-ngsi:
         type: Property
     organization:
-      description: 'Subject organization evaluated by the KPI'
+      description: Subject organization evaluated by the KPI
       type: string
       x-ngsi:
         model: ' https://schema.org/organization'
         type: Property
     owner:
-      description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'
+      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)
       items:
         anyOf: *keyperformanceindicator_-_properties_-_owner_-_items_-_anyof
-        description: 'Property. Unique identifier of the entity'
+        description: Property. Unique identifier of the entity
       type: array
       x-ngsi:
         type: Property
     process:
-      description: 'Either process or product must be defined'
+      description: Either process or product must be defined
       type: string
       x-ngsi:
         type: Property
     product:
-      description: 'Either process or product must be defined'
+      description: Either process or product must be defined
       type: string
       x-ngsi:
         type: Property
@@ -391,7 +397,7 @@ KeyPerformanceIndicator:
         model: https://schema.org/provider
         type: Property
     seeAlso:
-      description: 'list of uri pointing to additional resources about the item'
+      description: list of uri pointing to additional resources about the item
       oneOf:
         - items:
             format: uri
@@ -415,7 +421,7 @@ KeyPerformanceIndicator:
       x-ngsi:
         type: Property
     updatedAt:
-      description: 'Last update date of the KPI data. This can be different than the last update date of the KPI''s value.'
+      description: Last update date of the KPI data. This can be different than the last update date of the KPI's value.
       format: date-time
       type: string
       x-ngsi:
