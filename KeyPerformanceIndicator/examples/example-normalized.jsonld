@@ -1,79 +1,79 @@
 {
-    "id": "urn:ngsi-ld:KeyPerformanceIndicator:kpi-2016-Ciudad-containers-faults",
-    "type": "KeyPerformanceIndicator",
-    "address": {
-        "type": "Property",
-        "value": {
-            "addressLocality": "Ciudad",
-            "addressCountry": "ESP",
-            "type": "PostalAddress"
-        }
-    },
-    "calculationFrequency": {
-        "type": "Property",
-        "value": "monthly"
-    },
-    "calculationMethod": {
-        "type": "Property",
-        "value": "automatic"
-    },
-    "calculationPeriod": {
-        "type": "Property",
-        "value": {
-            "to": "2016-06-30",
-            "from": "2016-06-01"
-        }
-    },
-    "category": {
-        "type": "Property",
-        "value": [
-            "quantitative"
-        ]
-    },
-    "currentStanding": {
-        "type": "Property",
-        "value": "good"
-    },
-    "dateNextCalculation": {
-        "type": "Property",
-        "value": {
-            "@type": "DateTime",
-            "@value": "2016-07-31Z"
-        }
-    },
-    "description": {
-        "type": "Property",
-        "value": "Number of incidences raised on containers per month"
-    },
-    "kpiValue": {
-        "type": "Property",
-        "value": 20
-    },
-    "modifiedAt": {
-        "type": "Property",
-        "value": {
-            "@type": "DateTime",
-            "@value": "2016-06-29T15:59:09.224Z"
-        }
-    },
-    "name": {
-        "type": "Property",
-        "value": "Incidencias-Contenedores-Mensual"
-    },
-    "organization": {
-        "type": "Property",
-        "value": "Ayuntamiento de Ciudad"
-    },
-    "process": {
-        "type": "Property",
-        "value": "Garbage Collection"
-    },
-    "provider": {
-        "type": "Property",
-        "value": "Cleaning Service Provider S.A."
-    },
-    "@context": [
-        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.KeyPerformanceIndicator/master/context.jsonld"
+  "id": "urn:ngsi-ld:KeyPerformanceIndicator:kpi-2016-Ciudad-containers-faults",
+  "type": "KeyPerformanceIndicator",
+  "address": {
+    "type": "Property",
+    "value": {
+      "addressLocality": "Ciudad",
+      "addressCountry": "ESP",
+      "type": "PostalAddress"
+    }
+  },
+  "calculationFrequency": {
+    "type": "Property",
+    "value": "monthly"
+  },
+  "calculationMethod": {
+    "type": "Property",
+    "value": "automatic"
+  },
+  "calculationPeriod": {
+    "type": "Property",
+    "value": {
+      "to": "2016-06-30",
+      "from": "2016-06-01"
+    }
+  },
+  "category": {
+    "type": "Property",
+    "value": [
+      "quantitative"
     ]
+  },
+  "currentStanding": {
+    "type": "Property",
+    "value": "good"
+  },
+  "dateNextCalculation": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "2016-07-31T15:59:09.224Z"
+    }
+  },
+  "description": {
+    "type": "Property",
+    "value": "Number of incidences raised on containers per month"
+  },
+  "kpiValue": {
+    "type": "Property",
+    "value": 20
+  },
+  "modifiedAt": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "2016-06-29T15:59:09.224Z"
+    }
+  },
+  "name": {
+    "type": "Property",
+    "value": "Incidencias-Contenedores-Mensual"
+  },
+  "organization": {
+    "type": "Property",
+    "value": "Ayuntamiento de Ciudad"
+  },
+  "process": {
+    "type": "Property",
+    "value": "Garbage Collection"
+  },
+  "provider": {
+    "type": "Property",
+    "value": "Cleaning Service Provider S.A."
+  },
+  "@context": [
+    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.KeyPerformanceIndicator/master/context.jsonld"
+  ]
 }
