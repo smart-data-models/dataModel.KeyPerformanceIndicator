@@ -1,75 +1,59 @@
 KeyPerformanceIndicator:
-
   description: A Key Performance Indicator (KPI) is a type of performance measurement. KPIs evaluate the success of an organization or of a particular activity in which it engages.
-
   properties:
-
     address:
-
       description: The mailing address
-
       properties:
-
         addressCountry:
-          description: The country. For example, Spain
+          description: 'The country. For example, Spain'
           type: string
           x-ngsi:
             model: https://schema.org/addressCountry
             type: Property
-
         addressLocality:
-          description: The locality in which the street address is, and which is in the region
+          description: 'The locality in which the street address is, and which is in the region'
           type: string
           x-ngsi:
             model: https://schema.org/addressLocality
             type: Property
-
         addressRegion:
-          description: The region in which the locality is, and which is in the country
+          description: 'The region in which the locality is, and which is in the country'
           type: string
           x-ngsi:
             model: https://schema.org/addressRegion
             type: Property
-
         district:
-          description: A district is a type of administrative division that, in some countries, is managed by the local government
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'
           type: string
           x-ngsi:
             type: Property
-
         postOfficeBoxNumber:
-          description: The post office box number for PO box addresses. For example, 03578
+          description: 'The post office box number for PO box addresses. For example, 03578'
           type: string
           x-ngsi:
             model: https://schema.org/postOfficeBoxNumber
             type: Property
-
         postalCode:
-          description: The postal code. For example, 24004
+          description: 'The postal code. For example, 24004'
           type: string
           x-ngsi:
             model: https://schema.org/https://schema.org/postalCode
             type: Property
-
         streetAddress:
           description: The street address
           type: string
           x-ngsi:
             model: https://schema.org/streetAddress
             type: Property
-
         streetNr:
           description: Number identifying a specific property on a public street
           type: string
           x-ngsi:
             type: Property
-
       type: object
-
       x-ngsi:
         model: https://schema.org/address
         type: Property
-
     aggregatedData:
       description: ' Entity(ies) and attribute(s) aggregated by the KPI'
       items:
@@ -86,44 +70,37 @@ KeyPerformanceIndicator:
       type: array
       x-ngsi:
         type: Property
-
     alternateName:
       description: An alternative name for this item
       type: string
       x-ngsi:
         type: Property
-
     area:
-      description: For organizational purposes, it allows to add extra textual geographical information such as district, borough, or any other hint which can help to identify the KPI coverage
+      description: 'For organizational purposes, it allows to add extra textual geographical information such as district, borough, or any other hint which can help to identify the KPI coverage'
       type: string
       x-ngsi:
         type: Property
-
     areaServed:
       description: The geographic area where a service or offered item is provided
       type: string
       x-ngsi:
         model: https://schema.org/Text
         type: Property
-
     businessTarget:
-      description: For informative purposes, the business target to which this KPI is related to
+      description: 'For informative purposes, the business target to which this KPI is related to'
       type: string
       x-ngsi:
         type: Property
-
     calculatedBy:
       description: The organization in charge of calculating the KPI
       type: string
       x-ngsi:
         type: Property
-
     calculationFormula:
-      description: For informative purposes, the formula used for calculating the indicator
+      description: 'For informative purposes, the formula used for calculating the indicator'
       type: string
       x-ngsi:
         type: Property
-
     calculationFrequency:
       description: 'How often the KPI is calculated. Allowed values: one Of (hourly, daily, weekly, monthly, yearly, quarterly, bimonthly, biweekly). Or any other value meaningful for the application and not covered by the above list'
       enum:
@@ -138,7 +115,6 @@ KeyPerformanceIndicator:
       type: string
       x-ngsi:
         type: Property
-
     calculationMethod:
       description: The calculation method used
       enum:
@@ -148,7 +124,6 @@ KeyPerformanceIndicator:
       type: string
       x-ngsi:
         type: Property
-
     calculationPeriod:
       description: KPI's period of time
       properties:
@@ -161,7 +136,6 @@ KeyPerformanceIndicator:
       type: object
       x-ngsi:
         type: Property
-
     category:
       description: 'Indicator category. Allowed values: (quantitative, qualitative, leading, lagging, input, process, output, practical, directional, actionable, financial). Check Wikipedia for a description of each category listed above. - Any other value meaningful to the application and not covered by the above list'
       items:
@@ -182,7 +156,6 @@ KeyPerformanceIndicator:
       type: array
       x-ngsi:
         type: Property
-
     currentStanding:
       description: 'The KPI''s current standing as per its kpiValue. Allowed values: one Of (very good, good, fair, bad, very bad)'
       enum:
@@ -194,54 +167,46 @@ KeyPerformanceIndicator:
       type: string
       x-ngsi:
         type: Property
-
     dataProvider:
       description: A sequence of characters identifying the provider of the harmonised data entity
       type: string
       x-ngsi:
         type: Property
-
     dateCreated:
       description: Entity creation timestamp. This will usually be allocated by the storage platform
       format: date-time
       type: string
       x-ngsi:
         type: Property
-
     dateExpires:
       description: The date on which the KPI will be no longer necessary or meaningful
       format: date-time
       type: string
       x-ngsi:
         type: Property
-
     dateModified:
       description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform
       format: date-time
       type: string
       x-ngsi:
         type: Property
-
     dateNextCalculation:
       description: Date on which a new calculation of the KPI should be available
       format: date
       type: string
       x-ngsi:
         type: Property
-
     description:
       description: A description of this item
       type: string
       x-ngsi:
         type: Property
-
     effectiveSince:
       description: The date on which the organization created this KPI. This date might be different than the entity creation date
       format: date-time
       type: string
       x-ngsi:
         type: Property
-
     id:
       anyOf:
         - description: Identifier format of any NGSI entity
@@ -259,7 +224,6 @@ KeyPerformanceIndicator:
       description: Unique identifier of the entity
       x-ngsi:
         type: Property
-
     kpiValue:
       description: Value of the KPI. It can be of any type
       oneOf:
@@ -270,13 +234,9 @@ KeyPerformanceIndicator:
         - type: array
       x-ngsi:
         type: Property
-
     location:
-
-      description: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon
-
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'
       oneOf:
-
         - description: Geojson reference to the item. Point
           properties:
             bbox:
@@ -300,7 +260,6 @@ KeyPerformanceIndicator:
           type: object
           x-ngsi:
             type: GeoProperty
-
         - description: Geojson reference to the item. LineString
           properties:
             bbox:
@@ -327,7 +286,6 @@ KeyPerformanceIndicator:
           type: object
           x-ngsi:
             type: GeoProperty
-
         - description: Geojson reference to the item. Polygon
           properties:
             bbox:
@@ -356,7 +314,6 @@ KeyPerformanceIndicator:
           type: object
           x-ngsi:
             type: GeoProperty
-
         - description: Geojson reference to the item. MultiPoint
           properties:
             bbox:
@@ -382,7 +339,6 @@ KeyPerformanceIndicator:
           type: object
           x-ngsi:
             type: GeoProperty
-
         - description: Geojson reference to the item. MultiLineString
           properties:
             bbox:
@@ -411,7 +367,6 @@ KeyPerformanceIndicator:
           type: object
           x-ngsi:
             type: GeoProperty
-
         - description: Geojson reference to the item. MultiLineString
           properties:
             bbox:
@@ -442,23 +397,19 @@ KeyPerformanceIndicator:
           type: object
           x-ngsi:
             type: GeoProperty
-
       x-ngsi:
         type: GeoProperty
-
     name:
       description: The name of this item
       type: string
       x-ngsi:
         type: Property
-
     organization:
       description: Subject organization evaluated by the KPI
       type: string
       x-ngsi:
         model: ' https://schema.org/organization'
         type: Property
-
     owner:
       description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)
       items:
@@ -481,26 +432,22 @@ KeyPerformanceIndicator:
       type: array
       x-ngsi:
         type: Property
-
     process:
       description: Either process or product must be defined
       type: string
       x-ngsi:
         type: Property
-
     product:
       description: Either process or product must be defined
       type: string
       x-ngsi:
         type: Property
-
     provider:
-      description: Provider of the product or service, if any, that this KPI evaluates
+      description: 'Provider of the product or service, if any, that this KPI evaluates'
       type: string
       x-ngsi:
         model: https://schema.org/provider
         type: Property
-
     seeAlso:
       description: list of uri pointing to additional resources about the item
       oneOf:
@@ -513,42 +460,31 @@ KeyPerformanceIndicator:
           type: string
       x-ngsi:
         type: Property
-
     source:
-      description: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'
       type: string
       x-ngsi:
         type: Property
-
     type:
-      description: It must be KeyPerformanceIndicator. Enum:'KeyPerformanceIndicator'
+      description: 'It must be KeyPerformanceIndicator. Enum:''KeyPerformanceIndicator'''
       enum:
         - KeyPerformanceIndicator
       type: string
       x-ngsi:
         type: Property
-
     updatedAt:
       description: Last update date of the KPI data. This can be different than the last update date of the KPI's value
       format: date-time
       type: string
       x-ngsi:
         type: Property
-
   required:
     - id
     - type
-
   type: object
-
-  x-derived-from: ''
-
-  x-disclaimer: Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program
-
+  x-derived-from: ""
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'
   x-license-url: https://github.com/smart-data-models/dataModel.KeyPerformanceIndicator/blob/master/KeyPerformanceIndicator/LICENSE.md
-
   x-model-schema: https://smart-data-models.github.io/dataModel.KeyPerformanceIndicator/keyPerformanceIndicator/schema.json
-
-  x-model-tags: ''
-
+  x-model-tags: ""
   x-version: 0.2.1
