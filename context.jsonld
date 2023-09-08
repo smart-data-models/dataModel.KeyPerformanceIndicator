@@ -9,6 +9,11 @@
         "alternateName": "https://smartdatamodels.org/alternateName",
         "area": "https://smartdatamodels.org/dataModel.KeyPerformanceIndicator/area",
         "areaServed": "https://smartdatamodels.org/areaServed",
+        "attrs": "ngsi-ld:attrs",
+        "bbox": {
+            "@container": "@list",
+            "@id": "geojson:bbox"
+        },
         "businessTarget": "https://smartdatamodels.org/dataModel.KeyPerformanceIndicator/businessTarget",
         "calculatedBy": "https://smartdatamodels.org/dataModel.KeyPerformanceIndicator/calculatedBy",
         "calculationFormula": "https://smartdatamodels.org/dataModel.KeyPerformanceIndicator/calculationFormula",
@@ -16,6 +21,10 @@
         "calculationMethod": "https://smartdatamodels.org/dataModel.KeyPerformanceIndicator/calculationMethod",
         "calculationPeriod": "https://smartdatamodels.org/dataModel.KeyPerformanceIndicator/calculationPeriod",
         "category": "https://smartdatamodels.org/dataModel.KeyPerformanceIndicator/category",
+        "coordinates": {
+            "@container": "@list",
+            "@id": "geojson:coordinates"
+        },
         "currentStanding": "https://smartdatamodels.org/dataModel.KeyPerformanceIndicator/currentStanding",
         "dataProvider": "https://smartdatamodels.org/dataProvider",
         "dateCreated": "https://smartdatamodels.org/dateCreated",
@@ -25,6 +34,7 @@
         "description": "http://purl.org/dc/terms/description",
         "district": "https://smartdatamodels.org/district",
         "effectiveSince": "https://smartdatamodels.org/dataModel.KeyPerformanceIndicator/effectiveSince",
+        "entityType": "https://smartdatamodels.org/dataModel.KeyPerformanceIndicator/entityType",
         "from": "https://smartdatamodels.org/dataModel.KeyPerformanceIndicator/from",
         "id": "@id",
         "kpiValue": "https://smartdatamodels.org/dataModel.KeyPerformanceIndicator/kpiValue",
