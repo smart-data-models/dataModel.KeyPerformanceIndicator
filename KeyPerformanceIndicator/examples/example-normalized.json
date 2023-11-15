@@ -2,7 +2,7 @@
   "id": "kpi-2016-Ciudad-containers-faults",
   "type": "KeyPerformanceIndicator",
   "category": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
       "quantitative"
     ]
@@ -24,14 +24,14 @@
     "value": "good"
   },
   "address": {
-    "type": "PostalAddress",
+    "type": "StructuredValue",
     "value": {
       "addressLocality": "Ciudad",
       "addressCountry": "ESP"
     }
   },
   "calculationPeriod": {
-    "type": "StructuredObject",
+    "type": "StructuredValue",
     "value": {
       "to": "2016-06-30",
       "from": "2016-06-01"
