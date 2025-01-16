@@ -28,6 +28,7 @@
           "minItems": 1,
           "items": {
             "type": "string",
+            "description": "Property. Every possible value of the category",
             "enum": [
               "actionable",
               "directional",
@@ -100,12 +101,14 @@
           "minItems": 1,
           "items": {
             "type": "object",
+            "description": "Property. Object containing the entity type and the attributes of the KPI",
             "properties": {
               "entityType": {
                 "type": "string"
               },
               "attrs": {
                 "type": "array",
+                "description": "Property. List of subattributes of the KPI",
                 "items": {
                   "type": "string"
                 },
@@ -120,11 +123,13 @@
           "properties": {
             "from": {
               "type": "string",
-              "format": "date"
+              "format": "date",
+              "description": "Property. Start of the calculation period"
             },
             "to": {
               "type": "string",
-              "format": "date"
+              "format": "date",
+              "description": "Property. End of the calculation period"
             }
           }
         },
