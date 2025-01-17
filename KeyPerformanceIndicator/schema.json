@@ -104,13 +104,15 @@
             "description": "Property. Object containing the entity type and the attributes of the KPI",
             "properties": {
               "entityType": {
-                "type": "string"
+                "type": "string",
+                "description": "Property. Entity type of the aggregated data"
               },
               "attrs": {
                 "type": "array",
                 "description": "Property. List of subattributes of the KPI",
                 "items": {
-                  "type": "string"
+                  "type": "string",
+                  "description": "Property. Every subattribute of the KPI"
                 },
                 "minItems": 1
               }
