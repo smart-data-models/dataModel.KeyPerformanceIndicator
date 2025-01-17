@@ -28,7 +28,7 @@
           "minItems": 1,
           "items": {
             "type": "string",
-            "description": "Property. Every possible value of the category",
+            "description": "Property. Every possible value of the category. A minimum of one cateogry is mandatory",
             "enum": [
               "actionable",
               "directional",
