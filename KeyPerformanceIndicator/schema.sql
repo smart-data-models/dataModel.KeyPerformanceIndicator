@@ -1,7 +1,7 @@
 /* (Beta) Export of data model KeyPerformanceIndicator of the subject dataModel.KeyPerformanceIndicator for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE calculationFrequency_type AS ENUM ('hourly', 'daily', 'weekly', 'monthly', 'yearly', 'quarterly', 'bimonthly', 'biweekly');
-CREATE TYPE calculationMethod_type AS ENUM ('manual', 'automatic', 'semiautomatic');
-CREATE TYPE currentStanding_type AS ENUM ('veryGood', 'good', 'fair', 'bad', 'veryBad');
+CREATE TYPE KeyPerformanceIndicator_calculationFrequency_type AS ENUM ('hourly', 'daily', 'weekly', 'monthly', 'yearly', 'quarterly', 'bimonthly', 'biweekly');
+CREATE TYPE KeyPerformanceIndicator_calculationMethod_type AS ENUM ('manual', 'automatic', 'semiautomatic');
+CREATE TYPE KeyPerformanceIndicator_currentStanding_type AS ENUM ('veryGood', 'good', 'fair', 'bad', 'veryBad');
 CREATE TYPE KeyPerformanceIndicator_type AS ENUM ('KeyPerformanceIndicator');
 CREATE TABLE KeyPerformanceIndicator (
   "address" JSON,
@@ -12,11 +12,11 @@ CREATE TABLE KeyPerformanceIndicator (
   "businessTarget" TEXT,
   "calculatedBy" TEXT,
   "calculationFormula" TEXT,
-  "calculationFrequency" calculationFrequency_type,
-  "calculationMethod" calculationMethod_type,
+  "calculationFrequency" KeyPerformanceIndicator_calculationFrequency_type,
+  "calculationMethod" KeyPerformanceIndicator_calculationMethod_type,
   "calculationPeriod" JSON,
   "category" JSON,
-  "currentStanding" currentStanding_type,
+  "currentStanding" KeyPerformanceIndicator_currentStanding_type,
   "dataProvider" TEXT,
   "dateCreated" TIMESTAMP,
   "dateExpires" TIMESTAMP,
